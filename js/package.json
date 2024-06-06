@@ -1,0 +1,19 @@
+{
+  "name": "purgood",
+  "version": "1.0.0",
+  "description": "This is the puregood website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Evans-Munatsa/Puregood.git"
+  },
+  "author": "Evans Munatsa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Evans-Munatsa/Puregood/issues"
+  },
+  "homepage": "https://github.com/Evans-Munatsa/Puregood#readme"
+}
