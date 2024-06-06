@@ -46,9 +46,11 @@ p {
 
 .main-container {
   background-image: url("../img/backgrounds/Under-Construction.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   height: 850px;
+  background-position: center;
+
 }
 
 
@@ -100,4 +102,67 @@ progress::-webkit-progress-value {
 }
 progress::-moz-progress-bar {
   /* style rules */
+}
+
+
+/*@media only screen and (max-width: 600px) {
+  body {
+    background-color: lightblue;
+  }
+}*/
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    background-color: red;
+  }
+
+  .main-container .content {
+        position: relative;
+        top: 455px;
+        left: 80px;
+        width: 33%;
+  }
+
+  h1 {
+    font-size: 24px;
+    font-weight: 600;
+    color: #001B72;
+  }
+
+  p {
+    font-size: 12px;
+    font-weight: 300;
+    font-family: poppins;
+    color: #001B72;
+  }
+
+  .data {
+    display: inline-block;
+    width: 120px;
+    vertical-align: middle;
+    border-radius: 20px;
+    height: 34px;
+  }
+
+  .send-btn {
+    width: 60px;
+    height: 30px;
+    border-radius: 20px;
+  }
+
+  .mx-sm-3 {
+    margin-left: 0rem !important; 
+  }
+
+  progress {
+    border-radius: 7px;
+    width: 80%;
+    height: 22px;
+    margin-left: -11.5%;
+    box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+    top: 400px;
+    position: absolute;
+    left: 220px;
+  }
 }
