@@ -88,7 +88,7 @@ progress {
   height: 22px;
   margin-left: -11.5%;
   box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
-  top: 740px;
+  top: 715px;
   position: absolute;
 }
 progress::-webkit-progress-bar {
