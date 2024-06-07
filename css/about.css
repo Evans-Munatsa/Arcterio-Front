@@ -169,7 +169,7 @@ img {
 
 /*sponsors logos*/
 .sponsor-section{
-  background-image: url("../img/backgrounds/background-3.svg");
+  background-image: linear-gradient(rgb(255 255 255 / 99%), rgb(244 243 243 / 82%)), url("../img/backgrounds/background-3.svg");
   background-size: 1700px;
   background-repeat: no-repeat;
   /*opacity: 0.5;*/
@@ -344,4 +344,41 @@ img {
 .scroller:before,
 .scroller:after{
   background: #fff;
+}
+
+
+.carousel-caption {
+    background-color: rgb(0 0 0 / 0%);
+    padding: 20px;
+    /* border-radius: 10px; */
+    padding-top: 485px;
+    text-align: left;
+    position: absolute;
+    left: 140px;
+}
+
+.carousel-caption h3 {
+  font-size: 22px;
+  font-weight: 300;
+  color: white;
+  line-height: 20px;
+  padding-top: 28px;
+}
+
+.carousel-caption hr {
+  background-color: #FFB648;
+  width: 100px;
+  height: 5px;
+}
+
+.carousel-caption h5 {
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+
+.carousel-caption p {
+    font-size: 12px;
+    font-weight: 300;
+    width: 880px;
 }

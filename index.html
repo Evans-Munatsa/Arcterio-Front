@@ -170,12 +170,14 @@
 
 <!-- Masonry starts -->
     <div class="masonry">
+      <div class="container">
         <div class="masonry-item"><img src="https://images.pexels.com/photos/19562913/pexels-photo-19562913/free-photo-of-scenic-view-of-a-mountain-range.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 1"></div>
         <div class="masonry-item"><img src="https://images.pexels.com/photos/19395799/pexels-photo-19395799/free-photo-of-aerial-view-of-paris-on-the-banks-of-river-seine-in-autumn.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2"></div>
         <div class="masonry-item"><img src="https://images.pexels.com/photos/5547007/pexels-photo-5547007.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 3"></div>
          <div class="masonry-item"><img src="https://images.pexels.com/photos/19395799/pexels-photo-19395799/free-photo-of-aerial-view-of-paris-on-the-banks-of-river-seine-in-autumn.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2"></div>
          <div class="masonry-item"><img src="https://images.pexels.com/photos/19562913/pexels-photo-19562913/free-photo-of-scenic-view-of-a-mountain-range.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 1"></div>
          <div class="masonry-item"><img src="https://images.pexels.com/photos/19395799/pexels-photo-19395799/free-photo-of-aerial-view-of-paris-on-the-banks-of-river-seine-in-autumn.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Image 2"></div>
+         </div>
         <!-- Add more images as needed -->
     </div>
 <!-- Masonry ends -->
@@ -227,7 +229,21 @@
 
     <footer>
 
-      <svg id="Layer_1" class="mySvg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1512 896"><defs><style>.cls-1{fill:#001b72;}</style></defs><path class="cls-1" d="M1512,503.85V896H0V657c.1-44.73,6.3-194.8,77.93-334.36,25.1-49,55.33-91.05,90.12-125.73C248,117.17,352.39,75.72,476.18,75.72c82.59,0,153.7,21.37,218.36,53.8,73.47,36.79,138.65,87.87,202.64,138C1000.37,348.5,1112.83,426.69,1256.34,465,1330.94,488.94,1415.17,503.85,1512,503.85Z"/></svg>
+      <svg id="Layer_1" class="mySvg" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1512 896">
+        <defs>
+          <style>
+            /*.cls-1{fill:#001b72;}*/
+            .cls-1 {fill: url(#myGradient)}
+          </style>
+
+          <linearGradient id="myGradient">
+            <stop offset="5%" stop-color="#001b72" />
+            <stop offset="95%" stop-color="rgb(0, 27, 114);" />
+          </linearGradient>
+
+        </defs>
+        <path class="cls-1" d="M1512,503.85V896H0V657c.1-44.73,6.3-194.8,77.93-334.36,25.1-49,55.33-91.05,90.12-125.73C248,117.17,352.39,75.72,476.18,75.72c82.59,0,153.7,21.37,218.36,53.8,73.47,36.79,138.65,87.87,202.64,138C1000.37,348.5,1112.83,426.69,1256.34,465,1330.94,488.94,1415.17,503.85,1512,503.85Z"/>
+      </svg>
 
       <div class="footer-header">
         <h1>Let’s Turn Your Vision Into A Lived Reality</h1>
@@ -261,8 +277,6 @@
         </div>
       </div>
     </footer>
-
-
 
 
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>

@@ -728,11 +728,6 @@ banner
       box-sizing: border-box;
     }
 
-    .contact-image {
-      float: right;
-      max-width: 600px;
-      margin-left: 20px;
-    }
 
     .form-row {
       display: -ms-flexbox;
@@ -1182,7 +1177,7 @@ CSS.g-6,
 
 .home-sponsor-section {
   text-align: center;
-  padding: 380px 0;
+  padding: 380px 0px 20px 0px;
 }
 
 
@@ -1198,14 +1193,14 @@ CSS.g-6,
 /*footer*/
 footer {
   position: relative;
-  padding-top: 350px;
+  /*padding-top: 350px;*/
 }
 
 footer svg {
   display: block;
   width: 100%;
   height: auto;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
