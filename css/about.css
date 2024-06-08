@@ -416,6 +416,17 @@ img {
 
 /*bottom page slider*/
 
+.houser {
+  height: 600px;
+  margin: 0;
+  display: grid;
+  grid-template-rows: 500px 100px;
+  grid-template-columns: 1fr 30px 30px 30px 30px 30px 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+
 main#carousel {
   grid-row: 1 / 2;
   grid-column: 1 / 8;
@@ -525,4 +536,26 @@ input:nth-of-type(5) {
 }
 input:nth-of-type(5):checked ~ main#carousel {
   --position: 5;
+}
+
+
+.simplicity {
+  width: 100%;
+  position: absolute;
+  left: 780px;
+  padding-top: 100px;
+}
+
+.simplicity h3{
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 54px;
+  color: #001B72;
+  text-align: left;
+}
+
+.simplicity p {
+  font-size: 16px;
+  color: #000000;
+  text-align: left;
 }
