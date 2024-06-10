@@ -45,7 +45,7 @@ p {
 
 
 /*navbar starts*/
-header{
+/*header{
   width: 96%;
   background: white;
   position: fixed;
@@ -91,9 +91,9 @@ header .logo {
 #logo img {
   max-height: 50px; /* Adjust size as needed */
   width: 100%;
-}
+}*/
 
-  nav {
+/*  nav {
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -150,7 +150,7 @@ header .logo {
     text-decoration: none;
     color: #333;
     margin: 5px 0;
-  }
+  }*/
 
 /*  navbar ends*/
 
@@ -604,87 +604,110 @@ banner
 /* about section start */
 
 .about_section {
-    width: 100%;
-    float: left;
-    padding-top: 150px;
-    padding-bottom: 100px;
-    background-color: #EAEAEA;
-}
+            width: 100%;
+            float: left;
+            padding-top: 150px;
+            padding-bottom: 100px;
+            background-color: #EAEAEA;
+        }
 
-.about_section_2 {
-    width: 100%;
-    float: left;
-}
+        .about_section_2 {
+            width: 100%;
+            float: left;
+        }
 
-.about_taital {
-    width: 100%;
-    float: left;
-    font-size: 40px;
-    color: #3b3b3b;
-    text-transform: uppercase;
-    font-weight: bold;
-    padding-bottom: 0px;
-}
+        .about_taital {
+            width: 100%;
+            float: left;
+            font-size: 40px;
+            color: #3b3b3b;
+            text-transform: uppercase;
+            font-weight: bold;
+            padding-bottom: 0px;
+        }
 
-.about_taital_box {
-    width: 100%;
-    float: left;
-    padding-top: 15px;
-}
+        .about_taital_box {
+            width: 100%;
+            float: left;
+            padding-top: 15px;
+        }
 
-.about_img {
-    width: 100%;
-    position: relative;
-    right: -100px;
-    border-radius: 15px;
-}
+        .about_img {
+            width: 100%;
+            position: relative;
+            right: -100px;
+            border-radius: 15px;
+        }
 
-.about_img-2 {
-    width: 100%;
-    position: relative;
-    right: 0px;
-    border-radius: 15px;
-}
+        .about_img-2 {
+            width: 100%;
+            position: relative;
+            right: 0px;
+            border-radius: 15px;
+        }
 
-.about_taital_1 {
-    width: 100%;
-    float: left;
-    font-size: 30px;
-    color: #3b3b3b;
-    margin: 10px 0px;
-}
+        .about_taital_1 {
+            width: 100%;
+            float: left;
+            font-size: 30px;
+            color: #3b3b3b;
+            margin: 10px 0px;
+        }
 
-.about_text {
-    width: 100%;
-    float: left;
-    font-size: 16px;
-    color: #232222;
-    margin: 0px;
-}
+        .about_text {
+            width: 100%;
+            float: left;
+            font-size: 16px;
+            color: #232222;
+            margin: 0px;
+        }
 
-.readmore_btn {
-    width: 170px;
-    float: left;
-    margin-top: 40px;
-}
+        .readmore_btn {
+            width: 170px;
+            float: left;
+            margin-top: 40px;
+        }
 
-.readmore_btn a {
-    width: 100%;
-    float: left;
-    font-size: 18px;
-    color: #f01c1c;
-    text-transform: uppercase;
-    border-radius: 5px;
-    border: 1px solid #f01c1c;
-    padding: 10px;
-    border-radius: 5px;
-    text-align: center;
-}
+        .readmore_btn a {
+            width: 100%;
+            float: left;
+            font-size: 18px;
+            color: #f01c1c;
+            text-transform: uppercase;
+            border-radius: 5px;
+            border: 1px solid #f01c1c;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
 
-.readmore_btn a:hover {
-    color: #4a4949;
-    border: 1px solid #4a4949;
-}
+        .readmore_btn a:hover {
+            color: #4a4949;
+            border: 1px solid #4a4949;
+        }
+
+        .col-md-1, .col-md-5 {
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
+
+        .col-md-1 {
+            animation-delay: 0.5s;
+        }
+
+        .col-md-5:nth-child(2) {
+            animation-delay: 1s;
+        }
+
+        .col-md-5:nth-child(3) {
+            animation-delay: 1.5s;
+        }
+
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+            }
+        }
 
 
 /* about section end */
@@ -728,11 +751,6 @@ banner
       box-sizing: border-box;
     }
 
-    .contact-image {
-      float: right;
-      max-width: 600px;
-      margin-left: 20px;
-    }
 
     .form-row {
       display: -ms-flexbox;
@@ -853,34 +871,6 @@ banner
   padding-top: 75px;
 }
 
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
-  .about_section {
-    width: 100%;
-    /*float: left;*/
-    padding-top: 150px;
-    padding-bottom: 100px;
-  }
-
-  .about_section .promises {
-    padding-top: 5px;
-  }
-
-  .home-readmore_btn {
-    width: 160px;
-    height: 40px;
-    float: left;
-    margin-top: 18px;
-    border-radius: 20px;
-    border-color: #001B72;
-    color: #001B72;
-    font-size: 12px;
-    font-weight: 500;
-    line-height: 18px;
-    margin-bottom: 20px;
-  }
-}
-
 
 /* home section end */
 
@@ -927,6 +917,7 @@ banner
 
 .gif-image{
   padding-top: 180px;
+
 }
 
 .gif-image-2{
@@ -1210,7 +1201,7 @@ CSS.g-6,
 
 .home-sponsor-section {
   text-align: center;
-  padding: 380px 0;
+  padding: 380px 0px 20px 0px;
 }
 
 
@@ -1226,14 +1217,14 @@ CSS.g-6,
 /*footer*/
 footer {
   position: relative;
-  padding-top: 350px;
+  /*padding-top: 350px;*/
 }
 
 footer svg {
   display: block;
   width: 100%;
   height: auto;
-  position: absolute;
+  position: relative;
   bottom: 0;
 }
 
@@ -1323,7 +1314,6 @@ footer button {
   position: relative;
   left: 600px;
   top: -40px;
-  transition:all 2s ease-in-out;
 }
 
 
@@ -1418,25 +1408,28 @@ div {
 
 
 /*header text*/
-.header-text {
+/*.header-text {
   width: 40%;
   position: absolute;
   bottom: 90px;
   left: 100px;
+}*/
+
+
+
+.header-text {
+    width: 40%;
+    position: absolute;
+    bottom: 90px;
+    left: -100%;
+    animation: slideIn 2s forwards;
 }
 
-
-/*animations*/
-
-.hidden {
-  opacity: 0;
-  transition: all 1s;
+@keyframes slideIn {
+    0% {
+        left: -100%;
+    }
+    100% {
+        left: 100px;
+    }
 }
-
-.show {
-  opacity: 1;
-}
-
-
-
-
