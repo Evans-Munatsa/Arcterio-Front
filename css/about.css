@@ -6,7 +6,7 @@
 }
 
 
-.experties{
+.experties {
   padding-bottom: 65px;
 }
 
@@ -18,7 +18,7 @@
   color: #001B72;
 }
 
-.experties h3{
+.experties h3 {
   font-size: 26px;
   font-weight: 300;
   text-align: center;
@@ -27,13 +27,13 @@
   padding-bottom: 15px;
 }
 
-.expreties img{
+.expreties img {
   vertical-align: middle;
   border-style: none;
   border-radius: 25px;
 }
 
-.experties p{
+.experties p {
   font-size: 16px;
   font-weight: 400;
   font-family: poppins;
@@ -42,11 +42,11 @@
   line-height: 24px;
 }
 
-.experties .residential{
+.experties .residential {
   padding-top: 140px;
 }
 
-.experties .residential .header{
+.experties .residential .header {
   font-size: 26px;
   font-weight: 600;
   line-height: 39px;
@@ -58,11 +58,43 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-    border-top-color: currentcolor;
-    border-top-style: none;
-    border-top-width: 0px;
   border-top: 5px solid #FFB648;
 }
+
+@media (max-width: 768px) {
+
+  .about-hero h1 {
+    font-size: 30px;
+    font-weight: 600;
+    color: #001B72;
+  }
+
+  .about-hero p {
+    font-size: 16px;
+    font-weight: 400;
+    font-family: poppins;
+    color: #001B72;
+  }
+  .experties .residential {
+    padding-top: 50px;
+  }
+
+  .experties h2 {
+    font-size: 28px;
+    line-height: 42px;
+  }
+
+  .experties h3 {
+    font-size: 22px;
+    line-height: 33px;
+  }
+
+  .experties p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+}
+
 
 img {
   vertical-align: middle;
@@ -71,6 +103,17 @@ img {
 }
 
 
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    width: 10rem;
+    height: 8rem;
+    background-color: var(--dark);
+    border: 15px solid var(--dark);
+    border-radius: 50px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    width: 10%;
+}
 
 .labour h2{
   font-size: 36px;

@@ -4,7 +4,7 @@
 
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Navbar</title>
+  <title>Arcterio | About</title>
 
   <!-- font awesome css -->
   <link rel="stylesheet" href="css/plugins/font-awesome.min.css">
@@ -20,6 +20,7 @@
   <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
   <link rel="stylesheet" href="css/plugins/fancybox.min.css">
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link rel="stylesheet" type="text/css" href="css/nav.css">
   <link rel="stylesheet" type="text/css" href="css/about.css">
 
 </head>
@@ -60,45 +61,82 @@
   
 
       <!-- dynamic content -->
-    <div id="sb-dynamic-content" class="sb-transition-fade">
-      <!-- banner -->
-      <section class="sb-banner sb-banner-sm sb-banner-color">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-12">
-              <!-- main title -->
-              <div class="sb-main-title-frame">
-                <div class="sb-main-title text-center">
-                  <h1 class="sb-mb-30">Confidently Make Informed<br> Decisions Throughout Your Project.</h1>
-                  <p class="sb-text sb-text-lg sb-mb-30">Minimize and eliminate common construction issues. <br> such as budget variation and regulatory violation.</p>
-                </div>
+    <!-- banner -->
+  <div id="sb-dynamic-content" class="sb-transition-fade about-hero">
+    <section class="sb-banner sb-banner-sm sb-banner-color">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <!-- main title -->
+            <div class="sb-main-title-frame">
+              <div class="sb-main-title text-center">
+                <h1 class="sb-mb-30">Confidently Make Informed<br> Decisions Throughout Your Project.</h1>
+                <p class="sb-text sb-text-lg sb-mb-30">Minimize and eliminate common construction issues. <br> such as budget variation and regulatory violation.</p>
               </div>
-              <!-- main title end -->
             </div>
+            <!-- main title end -->
           </div>
         </div>
-      </section>
-      <!-- banner end -->
+      </div>
+    </section>
+    <!-- banner end -->
 
 
-      <!-- Experties Start -->
-      <section>
-        <div class="container experties">
-          <div class="row">
-            <div class="col-md-8"> 
-              <h2>Our Areas Of<br> Experties</h2>
-              <img src="img/Arcterio-architecture-project-process.jpg" style="width: 760px; border-radius:25px">
-              <p style="color: #3A3A3A">We embark on a collaborative journey to design and build your dream home, a <br> sanctuary that reflects your personality and lifestyle.</p>
-              <hr/>
+    <!-- Experties Start -->
+    <section>
+      <div class="container experties">
+        <div class="row">
+          <div class="col-md-8 col-12"> 
+            <h2>Our Areas Of<br> Experties</h2>
+            <img src="img/Arcterio-architecture-project-process.jpg" class="img-fluid">
+            <p>We embark on a collaborative journey to design and build your dream home, a <br> sanctuary that reflects your personality and lifestyle.</p>
+            <hr/>
+          </div>
+          <div class="col-md-4 col-12 residential">
+            <div id="residentialCarousel" class="carousel slide d-block d-md-none" data-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <h3 class="sb-suptitle sb-mb-15 header">New Residential</h3>
+                  <hr class="header-line" />
+                </div>
+                <div class="carousel-item">
+                  <h3 class="sb-suptitle sb-mb-15">Residential Extensions</h3>
+                  <hr/>
+                </div>
+                <div class="carousel-item">
+                  <h3 class="sb-suptitle sb-mb-15">Commercial Refurbishment</h3>
+                  <hr/>
+                </div>
+                <div class="carousel-item">
+                  <h3 class="sb-suptitle sb-mb-15">Commercial Spatial Planning</h3>
+                  <hr/>
+                </div>
+                <div class="carousel-item">
+                  <h3 class="sb-suptitle sb-mb-15">Shopping Centre Renovations</h3>
+                  <hr/>
+                </div>
+                <div class="carousel-item">
+                  <h3 class="sb-suptitle sb-mb-15">Disability Access</h3>
+                  <hr/>
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#residentialCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#residentialCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
             </div>
-            <div class="col-md-4 residential">
+            <div class="d-none d-md-block">
               <h3 class="sb-suptitle sb-mb-15 header">New Residential</h3>
               <hr class="header-line" />
               <h3 class="sb-suptitle sb-mb-15">Residential Extensions</h3>
               <hr/>
-              <h3 class="sb-suptitle sb-mb-15">Commercial  Refurbishment </h3>
+              <h3 class="sb-suptitle sb-mb-15">Commercial Refurbishment</h3>
               <hr/>
-              <h3 class="sb-suptitle sb-mb-15">Commercial  Spatial Planning </h3>
+              <h3 class="sb-suptitle sb-mb-15">Commercial Spatial Planning</h3>
               <hr/>
               <h3 class="sb-suptitle sb-mb-15">Shopping Centre Renovations</h3>
               <hr/>
@@ -107,81 +145,80 @@
             </div>
           </div>
         </div>
-      </section>
-      <!-- Experties end -->
+      </div>
+    </section>
+    <!-- Experties end -->
 
 
-      <!-- Labour section starts -->
-      <section style="background: #001B72;">
-        <div class="container labour" style="padding-top: 140px;padding-bottom: 56px;">
-          <div class="row">
-            <div class="col-md-6"> 
-              <h2>We Labour Over Every Detail <br>To Give You A Space That <br> Caters To Your Every Need <br>
-              <hr />
-              <img src="img/group.png" style="width: 650px" class="">
-              <h2>The Art of <b>Refined</b> <br>Design <b>Elegance</b><br>
-              <hr/>
-              <p >Our company values are what guide us as we strive to be the best, to fulfill our goal to pioneer sustainable food solutions in the catering world and to align every decision we make as a team.</p>
-            </div>
-            <div class="col-md-6">
-              <h3 class="sb-suptitle sb-mb-15"><b>Precision Design</b> & <br>Project Facilitation</h3>
-              <hr/>
-              <p class="sb-suptitle sb-mb-15">
-                We foster project efficiency through effective communication and a pragmatic approach  to project coordination.
-              </p>
 
-              <h2 class="sb-suptitle sb-mb-15">Our Core Values </h2>
-              <br/>
-              <p class="sb-suptitle sb-mb-15">
-                Marieke draws inspiration from diverse sources within the architectural landscape. This breadth of knowledge fuels her commitment to solving client challenges with honesty, integrity,  and a genuine, personalized approach. This client-centric focus and meticulous attention to detail are the cornerstones of everything we do at Arcterio.
-              </p> 
-            </div>
+        <!-- Labour section starts -->
+    <section style="background: #001B72;">
+      <div class="container labour" style="padding-top: 140px;padding-bottom: 56px;">
+        <div class="row">
+          <div class="col-md-6"> 
+            <h2>We Labour Over Every Detail <br>To Give You A Space That <br> Caters To Your Every Need <br>
+            <hr />
+            <img src="img/group.png" style="width: 650px" class="">
+            <h2>The Art of <b>Refined</b> <br>Design <b>Elegance</b><br>
+            <hr/>
+            <p >Our company values are what guide us as we strive to be the best, to fulfill our goal to pioneer sustainable food solutions in the catering world and to align every decision we make as a team.</p>
           </div>
+          <div class="col-md-6">
+            <h3 class="sb-suptitle sb-mb-15"><b>Precision Design</b> & <br>Project Facilitation</h3>
+            <hr/>
+            <p class="sb-suptitle sb-mb-15">
+              We foster project efficiency through effective communication and a pragmatic approach  to project coordination.
+            </p>
 
-          <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-           <!--  <ol class="carousel-indicators">
-              <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-              <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-            </ol> -->
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <div class="row comparison">
-                  <div class="wrapper">
-                    <div class="before">
-                      <img class="content-image" src="img/hilltop.png" draggable="false"/>   
-                    </div>
-                    <div class="after">
-                      <img class="content-image" src="https://farm2.staticflickr.com/1663/25814974803_d4c55ff708_b.jpg" draggable="false"/>
-                    </div>
-                    <div class="scroller">
-                      <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
-                        <polygon points="0 50 37 68 37 32 0 50" style="fill:#fff"/>
-                        <polygon points="100 50 64 32 64 68 100 50" style="fill:#fff"/>
-                      </svg>
-                    </div>
-                  </div>
+            <h2 class="sb-suptitle sb-mb-15">Our Core Values </h2>
+            <br/>
+            <p class="sb-suptitle sb-mb-15">
+              Marieke draws inspiration from diverse sources within the architectural landscape. This breadth of knowledge fuels her commitment to solving client challenges with honesty, integrity,  and a genuine, personalized approach. This client-centric focus and meticulous attention to detail are the cornerstones of everything we do at Arcterio.
+            </p> 
+          </div>
+        </div>
 
-                  <div class="carousel-caption d-none d-md-block">
-                  <h3>Monument Park</h3>
-                  <hr>
-                  <h5>COMMERCIAL | 2023</h5>
-                  <p>
-                    lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat te feugait nulla facilisi it amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat te feugait”
-                  </p>
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row comparison">
+              <div class="wrapper">
+                <div class="before">
+                  <img class="content-image" src="img/hilltop.png" draggable="false"/>   
                 </div>
+                <div class="after">
+                  <img class="content-image" src="https://farm2.staticflickr.com/1663/25814974803_d4c55ff708_b.jpg" draggable="false"/>
+                </div>
+                <div class="scroller">
+                  <svg class="scroller__thumb" xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100">
+                    <polygon points="0 50 37 68 37 32 0 50" style="fill:#fff"/>
+                    <polygon points="100 50 64 32 64 68 100 50" style="fill:#fff"/>
+                  </svg>
                 </div>
               </div>
+
+              <div class="carousel-caption d-none d-md-block">
+              <h3>Monument Park</h3>
+              <hr>
+              <h5>COMMERCIAL | 2023</h5>
+              <p>
+                lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat te feugait nulla facilisi it amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat te feugait”
+              </p>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
+            </div>
           </div>
-      </section>
+        </div>
+
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </section>
       <!-- Labour section ends -->
 
       <div class="container comprehensive">
@@ -364,7 +401,8 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="js/about.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/about.js"></script>
 </body>
 
 
