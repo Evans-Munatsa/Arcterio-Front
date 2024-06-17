@@ -1,4 +1,87 @@
 
+/* waves header section */
+.waves-header {
+  background: url(../img/hilltop.png) center center no-repeat;
+  background-size: cover;
+  min-height: 90vh;
+  position: relative;
+}
+
+.custom-shape-divider-bottom-1716665029 {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  transform: rotate(180deg);
+}
+
+.custom-shape-divider-bottom-1716665029 svg {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.custom-shape-divider-bottom-1716665029 .shape-fill {
+  fill: #EAEAEA;
+}
+
+.header-text {
+  text-align: center;
+  padding: 20px;
+}
+
+.legacy_taital_box h1 {
+  font-size: 2em;
+}
+
+.about_text {
+  font-size: 1.2em;
+}
+
+.home-readmore_btn {
+  margin-top: 10px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .waves-header {
+    min-height: 60vh;
+  }
+
+  .legacy_taital_box h1 {
+    font-size: 1.5em;
+  }
+
+  .about_text {
+    font-size: 1em;
+  }
+}
+
+@media (max-width: 480px) {
+  .waves-header {
+    min-height: 50vh;
+  }
+
+  .legacy_taital_box h1 {
+    font-size: 1.2em;
+  }
+
+  .about_text {
+    font-size: 0.9em;
+  }
+
+  .home-readmore_btn {
+    font-size: 0.9em;
+  }
+}
+
+
+
+
+
 
 /* Grids --------------------------------------------*/
 
@@ -66,3 +149,183 @@
 .item-14 {
   grid-row: 11/13;
 }
+
+
+
+
+  /* Styles for desktop SVG */
+  #desktop-svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Styles for mobile SVG */
+  #mobile-svg {
+    display: none;
+    width: 100%;
+    height: auto;
+  }
+
+  /* Media query to switch SVGs on mobile */
+  @media only screen and (max-width: 768px) {
+    #desktop-svg {
+      display: none;
+    }
+    #mobile-svg {
+      display: block;
+    }
+  }
+
+
+
+
+
+/* Other footer styles */
+footer {
+  position: relative;
+  /*padding-top: 350px;*/
+}
+
+footer svg {
+  display: block;
+  width: 100%;
+  height: auto;
+  position: relative;
+  bottom: 0;
+}
+
+footer h1 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #FFF;
+  line-height: 54px;
+  font-family: ;
+}
+
+footer p {
+  font-family: poppins;
+  font-size: 19px;
+  color: #fbfbfb;
+  font-weight: 400;
+  line-height: 20px;
+}
+
+footer button {
+  margin-top: 20px;
+  background-color: #FFB648;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 181px;
+  height: 40px;
+}
+
+.footer-header {
+  width: 25%;
+  left: 170px;
+  position: absolute;
+  bottom: 400px;
+}
+
+.footer-contact {
+  position: absolute;
+  bottom: 70px;
+  color: white;
+  left: 1000px;
+}
+
+.footer-contact h4{
+  font-size: 16px;
+  font-weight: 300;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+}
+
+.footer-contact p{
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 18px;
+  color: #fff;
+  padding-bottom: 10px;
+}
+
+.footer-contact img{
+  width: 250px;
+}
+
+
+/* Default image for desktop */
+.responsive-image {
+  content: url("../img/footer/desktop-dummy.svg");
+  width: -webkit-fill-available;
+}
+
+/* Change image for mobile devices */
+@media (max-width: 768px) {
+  .responsive-image {
+    content: url("../img/footer/footer-dummy.svg");
+    position: relative;
+    width: -webkit-fill-available;
+  }
+
+/*  .footer-header {
+    width: 60%;
+    left: 35px;
+    position: absolute;
+    bottom: 450px;
+  }*/
+
+/*  .footer-header {
+    width: 25%;
+    left: 170px;
+    position: relative;
+    top: 110px;
+  }*/
+
+      .footer-header {
+        width: 45%;
+        left: 30px;
+        position: relative;
+        top: -800px;
+    }
+
+  .footer-contact {
+  position: relative;
+  bottom: 70px;
+  color: red;
+  left: 100px;
+}
+
+
+  footer h1 {
+    font-size: 30px;
+    font-weight: 300;
+    color: #FFF;
+    line-height: 54px;
+    font-family: ;
+  }
+
+  footer p {
+    font-family: poppins;
+    font-size: 16px;
+    color: #fbfbfb;
+    font-weight: 400;
+    line-height: 20px;
+  }
+
+  footer button {
+    margin-top: 10px;
+    background-color: #FFB648;
+    color: #fff;
+    border: none;
+    border-radius: 30px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 140px;
+    height: 31px;
+    }
+}
+

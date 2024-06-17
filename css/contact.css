@@ -4,10 +4,7 @@
     float: left;
     padding-top: 150px;
     padding-bottom: 100px;
-}
-
-.contact-section-2 {
-    /*background-image: url(../img/backgrounds/plan-3.png);*/
+    background-color: inherit;
 }
 
 .contact_section_2 {
@@ -37,7 +34,13 @@
     height: 500px;
     box-shadow: 5px 2px 15px 10px;
     position: relative;
-    left: 115px
+    left: 115px;
+    overflow: hidden; /* Ensures image overflows are hidden */
+    transform: translateZ(0); /* Helps with performance */
+    background-attachment: fixed; /* Creates parallax effect */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .contact_taital_1 {
@@ -71,20 +74,6 @@
     /*margin: 0px;*/
 }
 
-
-.send-button {
-  width: 140px;
-  border-radius: 30px;
-  padding: 0px 10px 0px 10px;
-  height: 40px;
-  background-color: #001B72;
-  color: white;
-  font-size: 14px;
-  line-height: 18px;
-}
-
-
-
 .contact-image {
     margin-left: 20px;
     width: 900px;
@@ -93,9 +82,53 @@
 }
 
 .button-icon {
-    width: 20px;
+    width: 30px;
+    padding-left: 10px;
 }
 
+/* Parallax Effect */
+/*.parallax {
+    position: relative;
+    background-image: url('../img/Arcterio-architecture-project-process.jpg');
+    min-height: 500px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+
+.parallax {
+    background-image: url('../img/Arcterio-architecture-project-process.jpg');
+    min-height: 500px; 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 900px;
+    border-radius: 250px;
+    left: 60px;
+}
+/*forms section*/
+
+.contact-section-2 {
+    background-image: linear-gradient(rgb(255 255 255 / 99%), rgb(244 243 243 / 82%)), url("../img/backgrounds/plan-3.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+
+.send-button {
+    width: 180px;
+    border-radius: 30px;
+    padding: 0px 10px 0px 10px;
+    height: 40px;
+    background-color: #001B72;
+    color: white;
+    font-size: 14px;
+    line-height: 18px;
+}
 
 
 #message {

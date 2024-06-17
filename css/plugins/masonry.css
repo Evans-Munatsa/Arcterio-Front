@@ -1,0 +1,43 @@
+
+/*masonry*/
+
+
+.masonry {
+    column-count: 4;
+    column-gap: 1em;
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.masonry-item {
+    background-color: inherit;
+    margin-bottom: 1em;
+    /*display: inline-block;*/
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    break-inside: avoid;
+    border-radius: 30px;
+}
+
+.masonry-item img {
+    width: 100%;
+    display: block;
+    height: auto;
+    border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+    .masonry {
+        column-count: 2;
+    }
+}
+
+@media (max-width: 480px) {
+    .masonry {
+        column-count: 1;
+    }
+}
+
+
+/*Masonry ends*/

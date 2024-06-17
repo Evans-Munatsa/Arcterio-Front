@@ -96,7 +96,7 @@
 }
 
 
-img {
+.img-fluid {
   vertical-align: middle;
   border-style: none;
   border-radius: 25px;
