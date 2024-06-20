@@ -1417,7 +1417,7 @@
 .nav-scroll-state {
   position: absolute;
   top: 70px;
-  left: 109px;
+/*  left: 109px;*/
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: var(--br-16xl);
   background-color: var(--color-gainsboro-200);
