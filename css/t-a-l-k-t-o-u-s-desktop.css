@@ -354,9 +354,9 @@
   top: 263px;
   left: 767px;
   border-radius: var(--br-481xl);
-  width: 1032px;
+  width: 100%;
   height: 619px;
-  object-fit: contain;
+  object-fit: cover;
 }
 .offering-description-copy20,
 .primary-value-proposition-copy-wrapper33 {
@@ -409,6 +409,17 @@
   font-size: var(--cta-size);
   color: var(--color-white);
 }
+
+.main-sections {
+  position: absolute;
+/*  top: 263px;*/
+/*  left: 767px;*/
+  border-radius: var(--br-481xl);
+  width: 100%;
+  height: 619px;
+  object-fit: contain;
+}
+
 .instance-parent32 {
   position: absolute;
   top: 437px;
