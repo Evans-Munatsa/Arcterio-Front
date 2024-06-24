@@ -1242,11 +1242,17 @@
   justify-content: flex-start;
   gap: 55px;
 }
+
+.redidents-slider {
+  width: 100%;
+  position: absolute;
+
+}
 .instance-inner {
   width: 877px;
   position: relative;
   border-radius: 8px;
-  height: 401px;
+/*  height: 401px;*/
   object-fit: cover;
 }
 .instance-child1 {
@@ -1313,7 +1319,7 @@
 }
 .offering-summary {
   top: 1078px;
-  left: 453px;
+/*  left: 453px;*/
   display: flex;
   flex-direction: column;
   align-items: flex-end;

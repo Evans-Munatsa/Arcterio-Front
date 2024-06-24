@@ -18,16 +18,16 @@
 .studio-desktop-child {
   position: absolute;
   top: 1480px;
-  left: -46px;
+/*  left: -46px;*/
   background-color: var(--color-midnightblue);
-  width: 1603px;
+  width: 100%;
   height: 2448px;
 }
 .our-studio-backgrounds-linewor1 {
   position: absolute;
   top: 1494px;
   left: 0;
-  width: 1537px;
+  width: 100%;
   height: 993px;
   object-fit: cover;
   opacity: 0.15;
@@ -47,10 +47,10 @@
 .studio-desktop-item {
   position: absolute;
   top: -66px;
-  left: -101px;
+/*  left: -101px;*/
   background-color: var(--color-whitesmoke);
-  width: 1696px;
-  height: 911px;
+  width: 100%;
+  height: 650px;
 }
 .scroll-prompt-icon3 {
   position: absolute;
@@ -521,17 +521,17 @@
   color: var(--color-whitesmoke);
 }
 .confidently-make-informed-container {
-  position: absolute;
+  position: relative;
   top: 238px;
-  left: 221px;
+/*  left: 221px;*/
   font-size: var(--font-size-45xl);
   font-weight: 600;
   text-align: center;
 }
 .minimize-and-eliminate-container {
-  position: absolute;
-  top: 439px;
-  left: 460px;
+  position: relative;
+  top: 275px;
+/*  left: 460px;*/
   font-size: var(--h2-size);
   text-align: center;
 }
@@ -691,7 +691,7 @@
   display: none;
 }
 .instance-child7 {
-  width: 850px;
+  width: 100%;
   position: relative;
   border-radius: var(--br-11xl);
   height: 396px;
@@ -701,6 +701,7 @@
 .service-parent {
   display: flex;
   justify-content: flex-start;
+  position: relative;
 }
 .service-copy {
   width: 697px;
@@ -715,7 +716,7 @@
 .service-parent {
   flex-direction: column;
   align-items: flex-start;
-  gap: var(--gap-5xl);
+/*  gap: var(--gap-5xl);*/
 }
 .primary-value-proposition1 {
   align-self: stretch;
@@ -772,11 +773,11 @@
   color: var(--color-gray-100);
 }
 .services-section-accordion {
-  position: absolute;
+  position: relative;
   top: 736px;
   left: 156px;
   flex-direction: row;
-  gap: var(--gap-16xl);
+/*  gap: var(--gap-16xl);*/
 }
 .service1 {
   position: absolute;
@@ -1174,7 +1175,7 @@
 }
 .instance-parent19 {
   position: absolute;
-  top: 1953px;
+  top: 350px;
   left: 883px;
   width: 530px;
   display: flex;
@@ -1208,7 +1209,7 @@
 }
 .instance-parent20 {
   position: absolute;
-  top: 2322px;
+  top: 730px;
   left: 883px;
   width: 503px;
   display: flex;
@@ -1227,7 +1228,7 @@
 }
 .instance-parent21 {
   position: absolute;
-  top: 1642px;
+  top: 250px;
   left: 138px;
   display: flex;
   flex-direction: column;
