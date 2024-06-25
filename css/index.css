@@ -1234,6 +1234,8 @@
   align-self: stretch;
   flex: 1;
   position: relative;
+  border:  none;
+  background-color: inherit;
 }
 .offering-titles {
   display: flex;
@@ -1249,10 +1251,10 @@
 
 }
 .instance-inner {
-  width: 877px;
+  width: 860px;
   position: relative;
   border-radius: 8px;
-/*  height: 401px;*/
+  height: 401px;
   object-fit: cover;
 }
 .instance-child1 {
@@ -1322,7 +1324,7 @@
 /*  left: 453px;*/
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
+  /*align-items: flex-end;*/
   justify-content: flex-end;
   padding: var(--padding-5xs) var(--padding-13xl) var(--padding-base);
   gap: var(--gap-base);

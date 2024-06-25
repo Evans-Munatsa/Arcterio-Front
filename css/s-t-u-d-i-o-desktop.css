@@ -395,7 +395,7 @@
 .ethos-claim {
   position: absolute;
   top: 5289px;
-  left: -27px;
+  /*left: -27px;*/
   display: flex;
   flex-direction: column;
   align-items: center;
