@@ -11,6 +11,25 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" />
    
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
+
+    <style>
+      @keyframes appear{
+        from{
+          opacity: 0;
+          scale: 0.5;
+        }
+        to {
+          opacity: 1;
+          scale: 1;
+        }
+      }
+
+      .a-frame-house-1 {
+        animation: appear lenear;
+        animation-timeline: view();
+        animation-range: entry 0% cover 40%;
+      }
+    </style>
   </head>
   <body>
     <div class="talk-to-us-desktop">
