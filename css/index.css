@@ -1101,12 +1101,12 @@
   height: 902px;
 }
 .group-icon5 {
-  height: 35vh;
-  width: 15vh;
+  height: 30vh;
+  width: 10vh;
   top: 370px;
 /*  right: 0;*/
 /*  bottom: 0;*/
-/*  left: 0;*/
+  left: 5%;
 /*  max-width: 100%;*/
   overflow: hidden;
 /*  max-height: 100%;*/
@@ -1114,8 +1114,8 @@
 }
 
 .group-icon6 {
-  height: 290px;
-  width: 100px;
+  height: 30vh;
+  width: 10vh;
   top: 370px;
 /*  right: 0;*/
 /*  bottom: 0;*/
