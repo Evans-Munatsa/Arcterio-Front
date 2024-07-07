@@ -73,6 +73,9 @@ window.onload = function() {
     });
 }
 
+// Initiate the wowjs
+    new WOW().init();
+
 
 
 class Slider{
