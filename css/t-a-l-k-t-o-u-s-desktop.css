@@ -21,18 +21,18 @@
 .footer-container6 {
   position: absolute;
   top: 1869px;
-  left: -78px;
-  width: 1723.3px;
-  height: 1116px;
+/*  left: -78px;*/
+  width: 100%;
+/*  height: 1116px;*/
   overflow: hidden;
 }
 .artboard-32-16 {
   position: absolute;
   top: 1913px;
-  left: -20.4px;
-  width: 1614px;
+/*  left: -20.4px;*/
+  width: 100%;
   height: 1314px;
-  object-fit: cover;
+/*  object-fit: cover;*/
 }
 .primary-value-proposition-container19 {
   align-self: stretch;
@@ -680,7 +680,8 @@
   width: 100%;
   position: relative;
   background-color: var(--color-whitesmoke);
-  height: 2903px;
+/*  height: 2903px;*/
+  height: 1860px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-17xl);

@@ -63,11 +63,11 @@
   object-fit: contain;
 }
 .footer-container3 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 1723.3px;
-  height: 1116px;
+/*  position: absolute;*/
+/*  top: 0;*/
+/*  left: 0;*/
+  width: 100%px;
+/*  height: 1116px;*/
   overflow: hidden;
 }
 .artboard-32-13 {
@@ -145,8 +145,9 @@
   color: var(--color-midnightblue);
 }
 .instance-parent10 {
-  position: absolute;
-  top: 182px;
+  width: 50%;
+  position: relative;
+  top: 40vh;
   left: 223px;
   display: flex;
   flex-direction: column;
@@ -154,6 +155,7 @@
   justify-content: center;
   gap: var(--gap-5xs);
   font-size: var(--font-size-17xl);
+  color: white;
 }
 .quicklinks3 {
   position: relative;
@@ -181,6 +183,7 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
+  color: white;
 }
 .footer-links3 {
   flex-direction: row;
@@ -255,9 +258,9 @@
   flex-shrink: 0;
 }
 .footer-links-details3 {
-  position: absolute;
-  top: 578px;
-  left: 1189.1px;
+  position: relative;
+  top: 45vh;
+  left: 30vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -318,11 +321,12 @@
   font-size: var(--c1-size);
 }
 .instance-parent11 {
-  position: absolute;
-  top: 962px;
+  position: relative;
+  top: 56vh;
   left: 224.6px;
   align-items: flex-end;
   gap: var(--gap-861xl);
+  color: white;
 }
 .footer-container-group {
   position: absolute;
@@ -1316,7 +1320,8 @@
   width: 100%;
   position: relative;
   background-color: var(--color-whitesmoke);
-  height: 7620px;
+/*  height: 7620px;*/
+  height: 6550px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-17xl);
@@ -2749,3 +2754,24 @@
   color: var(--color-midnightblue);
   font-family: var(--h3);
 }
+
+
+/*.footer-section{
+  background-image: url(./img/footer/desktop-dummy.svg);
+  width: 100%;
+  background-size: cover;
+  height: 180vh;
+  background-repeat: none;
+
+}
+
+@media only screen and (m-width: 768px) {
+  .footer-section{
+    background-image: url(./img/footer/desktop-dummy.svg);
+    width: 100%;
+    background-size: cover;
+    height: 130vh;
+    background-repeat: none;
+  }
+
+}*/
