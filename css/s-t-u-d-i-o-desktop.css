@@ -348,6 +348,7 @@
   margin: 0;
 }
 .primary-value-proposition-container10 {
+  font-size: 36px;
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -684,6 +685,9 @@
   flex: 1;
   position: relative;
   font-weight: 300;
+  font-size: 36px;
+  color: #001B72;
+  padding-left: 15px;
 }
 .primary-value-proposition-copy-wrapper12 {
   /*position: absolute;*/
