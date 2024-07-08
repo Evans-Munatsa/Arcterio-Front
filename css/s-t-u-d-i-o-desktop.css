@@ -817,8 +817,8 @@
   /*position: absolute;*/
   top: 0;
   left: 0;
-  width: 351px;
-  height: 146px;
+  /*width: 80vh;*/
+  height: 30vh;
 }
 .group-div {
   /*top: 4532px;*/
