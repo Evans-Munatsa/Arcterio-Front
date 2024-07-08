@@ -140,6 +140,9 @@
   --br-smi-3: 12.3px;
 }
 
+body {
+  background-color: #e5e5e5;
+}
 
 .blog-desktop {
   display: block;
