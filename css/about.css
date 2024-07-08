@@ -242,7 +242,7 @@
 /*sponsors logos*/
 .sponsor-section{
   background-image: linear-gradient(rgb(255 255 255 / 99%), rgb(244 243 243 / 82%)), url("../img/backgrounds/background-3.svg");
-  background-size: 1700px;
+  background-size: cover;
   background-repeat: no-repeat;
   /*opacity: 0.5;*/
 }

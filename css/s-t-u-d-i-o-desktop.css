@@ -348,6 +348,7 @@
   margin: 0;
 }
 .primary-value-proposition-container10 {
+  /*font-size: 36px;*/
   align-self: stretch;
   flex: 1;
   position: relative;
@@ -402,6 +403,9 @@
   /*position: absolute;*/
   /*top: 5289px;*/
   /*left: -27px;*/
+  background-image: linear-gradient(rgb(255 255 255 / 99%), rgb(244 243 243 / 82%)), url(../img/backgrounds/background-3.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -684,6 +688,9 @@
   flex: 1;
   position: relative;
   font-weight: 300;
+  font-size: 36px;
+  color: #001B72;
+  padding-left: 15px;
 }
 .primary-value-proposition-copy-wrapper12 {
   /*position: absolute;*/
