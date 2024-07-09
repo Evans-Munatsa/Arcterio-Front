@@ -351,11 +351,11 @@
   font-size: var(--cta-size);
 }
 .talk-to-us-desktop-child {
-  position: absolute;
+  position: relative;
   top: 263px;
-  left: 767px;
+  left: 140px;
   border-radius: var(--br-481xl);
-  width: 100%;
+  width: 200vh%;
   height: 619px;
   object-fit: cover;
 }
