@@ -91,7 +91,11 @@
   object-fit: cover;
 }
 .lets-turn-your {
+  font-size: 32px;
   margin: 0;
+  line-height: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .primary-value-proposition-container {
   align-self: stretch;
@@ -410,6 +414,7 @@
 .hilltop-plettenberg-bay {
   margin: 0;
   font-weight: 500;
+  font-size: 36px;
 }
 .residential-2003 {
   margin: 0;
@@ -1303,7 +1308,7 @@
   padding: 0 var(--padding-3xs);
   cursor: pointer;
   font-size: var(--cta-size);
-  width: 20vh;
+  width: 25vh;
 }
 .sub-headline-copy-sub-headline-wrapper1 {
   width: 271px;
