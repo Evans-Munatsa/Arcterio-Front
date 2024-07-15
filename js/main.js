@@ -13,6 +13,8 @@
 document.addEventListener('DOMContentLoaded', function() {
   var logo = document.getElementById('logo');
   var originalText = '.img/logos/arcterio.png';
+  var navBar = document.querySelector('nav'); // Assuming your navbar is in a <nav> element
+
   var imageUrl = './img/logo-small.png';
   var lastScrollTop = 0;
 
@@ -22,6 +24,8 @@ document.addEventListener('DOMContentLoaded', function() {
     if (scrollTop > lastScrollTop) {
       // Scrolling down - show image
       logo.innerHTML = '<img src="' + imageUrl + '" alt="Logo">';
+      navBar.style.backgroundColor = '#e5e5e59e';
+
     } else {
       // Scrolling up - show text
       logo.innerHTML = '<img src="' + imageUrl + '" alt="Logo">';

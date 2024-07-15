@@ -1017,6 +1017,8 @@ CSS.g-6,
   background-color: #FFB648;
   width: 100px;
   height: 12px;
+  opacity: 1;
+  border-top: none;
 }
 
 
