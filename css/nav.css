@@ -1,134 +1,87 @@
-/*navbar starts*/
-header{
-  width: 96%;
-  background: white;
-  position: fixed;
-  top: 2rem; left: 50%;
-  transform: translateX(-50%);
-  border-radius: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 1rem 2rem;
-  z-index: 1000;
+
+.navbar-expand-lg .navbar-toggler {
+    display: block;
 }
 
-header .navbar ul {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  list-style: none;
+.navbar-logo {
+    margin-left: auto;
+    margin-right: auto;
 }
 
-header .navbar ul li {
-  margin: 0 1rem;
+.navbar-toggler {
+    border: none;
+    background: none;
 }
 
-header .navbar ul li a {
-  font-size: 2rem;
-  color: var(--blue);
-  transition: .2s;
+.navbar-toggler-icon {
+    color: black;
 }
 
-header .navbar ul li .active,
-header .navbar ul li a:hover {
-  color: var(--violet);
-}
-
-header .logo {
-  font-size: 2.5rem;
-  color: var(--violet);
-  text-transform: uppercase;
-  transition: .3s ease;
-}
-
-#logo img {
-  max-height: 50px; /* Adjust size as needed */
-  width: 100%;
-}
-
-
-
-
-.container {
-  position: relative;
-  width: 100%;
-}
-
-
-nav {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    margin-top: 0px;
-    /*padding: 20px 0;*/
-    padding-top: 20px;
-    /*padding-right: 0px;*/
-    padding-left: 25px;
-    padding-right: 25px;
-    padding-bottom: 20px;
-    background-color: #e5e5e5;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+.sidebar {
+    height: 70%;
     position: fixed;
+    z-index: 1;
     top: 0;
-    z-index: 10;
-    border-radius: 20px;
-    transition: padding 0.3s ease-in-out;
-    margin-top: 15px;
-  }
-  
-nav .flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+    right: 0;
+    background-color: #001B72;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+    width: 0;
 }
 
-nav .icons {
-  display: flex;
-  align-items: center;
+.sidebar a {
+    padding: 10px 15px;
+    text-decoration: none;
+    font-size: 25px;
+    color: white;
+    display: block;
+    transition: 0.3s;
 }
 
-nav .menu-toggle {
-  font-size: 1.5rem;
-  color: #333;
-  cursor: pointer;
+.sidebar a:hover {
+    color: #f1f1f1;
 }
 
-nav .menu {
-  position: fixed;
-  top: 0;
-  left: -100%;
-  width: 250px;
-  height: 100%;
-  background-color: #001B72;
-  color: #fff;
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  justify-content: center;
-  transition: left 0.3s ease-in-out;
-  padding-left: 30px;
+.sidebar .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    background-color: #FFB648;
+    color: black;
+    border-radius: 25px;
 }
 
-nav .menu.show {
-  left: 0;
+.overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    overflow-x: hidden;
+    transition: 0.5s;
 }
 
-nav .menu a {
-  text-decoration: none;
-  color: #fff;
-  margin: 10px 0;
-  font-size: 22px;
-  font-weight: 400;
+.scrolled {
+    background-color: #e5e5e59e !important;
 }
 
-
-@media (min-width: 1200px) {
-    .container, .container-lg, .container-md, .container-sm, .container-xl {
-        max-width: 1200px;
-    }
+.logo1 {
+    display: inline;
 }
 
+.logo2 {
+    display: none;
+}
 
+.scrolled .logo1 {
+    display: none;
+}
 
-/*  navbar ends*/
+.scrolled .logo2 {
+    display: inline;
+}
