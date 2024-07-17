@@ -1321,6 +1321,7 @@ div {
     bottom: 90px;
     left: -100%;
     animation: slideIn 2s forwards;
+    margin-bottom: 2rem;
 }
 
 @keyframes slideIn {
