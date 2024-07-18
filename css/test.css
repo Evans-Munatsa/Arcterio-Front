@@ -223,38 +223,6 @@ footer button {
   height: 40px;
 }
 
-.footer-header {
-  width: 25%;
-  left: 170px;
-  position: absolute;
-  bottom: 400px;
-}
-
-.footer-contact {
-  position: absolute;
-  bottom: 70px;
-  color: white;
-  left: 1000px;
-}
-
-.footer-contact h4{
-  font-size: 16px;
-  font-weight: 300;
-  text-transform: uppercase;
-  padding-bottom: 10px;
-}
-
-.footer-contact p{
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 18px;
-  color: #fff;
-  padding-bottom: 10px;
-}
-
-.footer-contact img{
-  width: 250px;
-}
 
 
 /* Default image for desktop */

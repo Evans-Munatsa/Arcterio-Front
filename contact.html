@@ -32,6 +32,39 @@
     </style>
   </head>
   <body>
+
+  <!-- header section starts -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="width: 90%; margin: auto; background: #e5e5e5; border-radius: 25px; padding: 1rem 3rem; top: 2rem;">
+    <img src="img/icons/phone.svg"  class="bi bi-telephone">
+    <a class="navbar-logo" href="#" style="text-align:center;">
+      <img src="img/logos/arcterio.png"  class="logo1" id="logo" style="width: 10%;">
+      <img src="img/logos/arcterio-logo-icon.png" class="logo2" alt="Logo 2" style="width: 2rem;">
+    </a>
+    <button class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn">&times;</a>
+    <div class="left-float">
+      <a href="#">HOME</a>
+    </div>
+
+    <div class="right-float" style="text-align: end;">
+      <a href="#">Our Studio</a>
+      <a href="#">ARCHITECTURE COMMISSIONS</a>
+      <a href="#">OUR BLOGS</a>
+    </div>
+
+    <div class="left-float">
+      <a href="#">TALK TO US</a>
+    </div>      
+  </div>
+
+  <div class="overlay"></div>
+  <!-- header section ends -->
+
     <div class="talk-to-us-desktop">
       <img class="plan-3-icon" alt="" src="./public/plan-1@2x.png" />
 
@@ -589,5 +622,20 @@
         />
       </div>
     </div>
+
+ 
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./lib/wow/wow.min.js"></script>
+    <script src="./lib/easing/easing.min.js"></script>
+    <script src="./lib/waypoints/waypoints.min.js"></script>
+    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/nav.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

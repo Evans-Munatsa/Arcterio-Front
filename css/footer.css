@@ -1,148 +1,58 @@
-/* Other footer styles */
-footer {
+
+/*footer*/
+
+.main-footer{
   position: relative;
-  /*padding-top: 350px;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 400px;
+  height: 950px;
+  padding: 100px 12vw;
+  background-image: url(../img/footer/main-footer-container.png);
+  /* background-color: red; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
 }
 
-footer svg {
-  display: block;
-  width: 100%;
-  height: auto;
-  position: relative;
-  bottom: 0;
-}
 
 footer h1 {
-  font-size: 36px;
-  font-weight: 300;
-  color: #FFF;
-  line-height: 54px;
-  font-family: ;
-}
-
-footer p {
-  font-family: poppins;
-  font-size: 19px;
-  color: #fbfbfb;
-  font-weight: 400;
-  line-height: 20px;
-}
-
-footer button {
-  margin-top: 20px;
-  background-color: #FFB648;
-  color: #fff;
-  border: none;
-  border-radius: 30px;
-  font-size: 16px;
-  cursor: pointer;
-  width: 181px;
-  height: 40px;
-}
-
-.footer-header {
-  width: 25%;
-  left: 170px;
-  position: absolute;
-  bottom: 400px;
-}
-
-.footer-contact {
-  position: absolute;
-  bottom: 70px;
   color: white;
-  left: 1000px;
+  font-size: 40px;
+  font-family: 'Poppins';
+  line-height: 65px;
 }
 
-.footer-contact h4{
+footer p{
+  color: white;
   font-size: 16px;
   font-weight: 300;
-  text-transform: uppercase;
-  padding-bottom: 10px;
 }
 
-.footer-contact p{
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 18px;
-  color: #fff;
-  padding-bottom: 10px;
-}
-
-.footer-contact img{
-  width: 250px;
-}
-
-
-/* Default image for desktop */
-.responsive-image {
-  content: url("../img/footer/desktop-dummy.svg");
-  width: -webkit-fill-available;
-}
-
-/* Change image for mobile devices */
-@media (max-width: 768px) {
-  .responsive-image {
-    content: url("../img/footer/footer-dummy.svg");
-    position: relative;
-    width: -webkit-fill-available;
-  }
-
-/*  .footer-header {
-    width: 60%;
-    left: 35px;
-    position: absolute;
-    bottom: 450px;
-  }*/
-
-/*  .footer-header {
-    width: 25%;
-    left: 170px;
-    position: relative;
-    top: 110px;
-  }*/
-
-      .footer-header {
-        width: 45%;
-        left: 30px;
-        position: relative;
-        top: -800px;
-    }
-
-  .footer-contact {
+.vision {
   position: relative;
-  bottom: 70px;
-  color: red;
-  left: 100px;
+  top: 10vw;
+  left: 10px;
+}
+
+.links {
+  position: relative;
+  top: 48rem;
+  left: 14rem;
 }
 
 
-  footer h1 {
-    font-size: 30px;
-    font-weight: 300;
-    color: #FFF;
-    line-height: 54px;
-    font-family: ;
-  }
-
-  footer p {
-    font-family: poppins;
-    font-size: 16px;
-    color: #fbfbfb;
-    font-weight: 400;
-    line-height: 20px;
-  }
-
-  footer button {
-    margin-top: 10px;
-    background-color: #FFB648;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    font-size: 16px;
-    cursor: pointer;
-    width: 140px;
-    height: 31px;
-    }
+.links h3 {
+  color: white;
+  font-size: 22px;
+  font-weight: 100;
+  padding-bottom: 1rem;
 }
 
+.footer-button{
+  background: orange;
+  width: 170px;
+  height: 45px;
+  border-radius: 25px;
+}
