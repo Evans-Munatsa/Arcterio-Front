@@ -141,3 +141,8 @@ class Slider{
   }
   
   const slider = new Slider(document.querySelector('#slider'));
+
+
+
+
+

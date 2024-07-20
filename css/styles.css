@@ -255,7 +255,8 @@ p {
     width: calc(100% + 1.3px);
     /*height: 355px;*/
     /*height: 60vh;*/
-    min-height: 70vh;
+    /*min-height: 60vh;*/
+    min-height: 30vw;
 }
 
 .custom-shape-divider-bottom-1716665029 .shape-fill {
