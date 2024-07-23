@@ -379,7 +379,7 @@
   text-align: left;
 /*  justify-content: flex-start;*/
   gap: var(--gap-10xs);
-  padding-left: 80px;
+  /*padding-left: 80px;*/
   padding-top: 20px;
   padding-bottom: 50px;
 }
@@ -397,7 +397,7 @@
 }
 
 .blog-posts {
-  position: absolute;
+  position: relative;
   top: 621px;
   text-align: center;
 }
@@ -457,7 +457,7 @@
   width: 100%;
   position: relative;
   background-color: var(--color-whitesmoke);
-  height: 2903px;
+  height: 2000px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-xl);
