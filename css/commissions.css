@@ -442,7 +442,8 @@
   width: 100%;
   position: relative;
   background-color: var(--color-whitesmoke);
-  height: 2903px;
+  /*height: 2903px;*/
+  height: 2480px;
   overflow: hidden;
   text-align: left;
   font-size: var(--cta-size);
