@@ -587,6 +587,7 @@ input:nth-of-type(5):checked ~ main#carousel {
   position: absolute;
   left: 780px;
   padding-top: 100px;
+  z-index: 2;
 }
 
 .simplicity h3{

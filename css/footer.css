@@ -10,7 +10,7 @@
   height: 950px;
   padding: 100px 12vw;
   background-image: url(../img/footer/main-footer-container.png);
-  /* background-color: red; */
+   background-color: #ffffff52; 
   background-repeat: no-repeat;
   background-size: cover;
   overflow: hidden;
@@ -26,7 +26,7 @@ footer h1 {
 
 footer p{
   color: white;
-  font-size: 16px;
+  font-size: 12px;
   font-weight: 300;
 }
 
@@ -38,14 +38,14 @@ footer p{
 
 .links {
   position: relative;
-  top: 48rem;
+  top: 50rem;
   left: 14rem;
 }
 
 
 .links h3 {
   color: white;
-  font-size: 22px;
+  font-size: 14px;
   font-weight: 100;
   padding-bottom: 1rem;
 }
