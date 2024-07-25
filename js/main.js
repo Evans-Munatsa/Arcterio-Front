@@ -60,6 +60,8 @@ function showNextSlide() {
     slides[currentIndex].classList.add('active');
 }
 
+
+
 setInterval(showNextSlide, 5000);
 
 // Initialize the first image as active

@@ -1301,6 +1301,7 @@
 
         <script>
         function goToSlide(slideIndex) {
+          console.log('Navigating to slide:', slideIndex);
             const carousel = document.getElementById('myCarousel');
             const carouselInstance = new bootstrap.Carousel(carousel);
             carouselInstance.to(slideIndex);

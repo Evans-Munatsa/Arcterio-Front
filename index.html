@@ -17,6 +17,139 @@
   <link rel="stylesheet" type="text/css" href="css/footer.css">
 
   <link rel="stylesheet" type="text/css" href="css/styles.css">
+   <link href="./lib/animate/animate.min.css" rel="stylesheet" />
+    <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+
+
+    <style>
+      #slider {
+      position: relative;
+      top: 175px;
+      /*width: 50%;*/
+      width: 65%;
+      height: 32vw;
+      /*height: 45vw;*/
+      margin: 150px auto;
+      font-family: 'Helvetica Neue', sans-serif;
+      perspective: 1400px;
+      transform-style: preserve-3d;
+    }
+
+    input[type=radio] {
+      position: relative;
+      top: 108%;
+      left: 50%;
+      width: 18px;
+      height: 18px;
+      margin: 0 15px 0 0;
+      opacity: 0.4;
+      transform: translateX(-83px);
+      cursor: pointer;
+      display: none;
+    }
+
+    input[type=radio]:nth-child(5) {
+      margin-right: 0px;
+    }
+
+    input[type=radio]:checked {
+      opacity: 1;
+    }
+
+    #slider label,
+    #slider label img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      color: white;
+      font-size: 70px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 400ms ease;
+    }
+
+    #slider label .description {
+         position: relative;
+    /* bottom: 20px; */
+    left: 25%;
+    transform: translateX(-50%);
+    /*background: rgba(0, 0, 0, 0.6);*/
+    background: inherit;
+    color: white;
+    /* padding: 10px 20px; */
+    border-radius: 5px;
+    font-size: 16px;
+    display: none;
+    top: 340px;
+    width: 75%;
+    }
+
+    /* Slider Functionality */
+
+    /* Active Slide */
+    #s1:checked ~ #slide1,
+    #s2:checked ~ #slide2,
+    #s3:checked ~ #slide3,
+    #s4:checked ~ #slide4,
+    #s5:checked ~ #slide5 {
+      box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+      transform: translate3d(0%, 0, 0px);
+    }
+
+    /* Next Slide */
+    #s1:checked ~ #slide2,
+    #s2:checked ~ #slide3,
+    #s3:checked ~ #slide4,
+    #s4:checked ~ #slide5,
+    #s5:checked ~ #slide1 {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+      transform: translate3d(20%, 0, -100px);
+    }
+
+    /* Next to Next Slide */
+    #s1:checked ~ #slide3,
+    #s2:checked ~ #slide4,
+    #s3:checked ~ #slide5,
+    #s4:checked ~ #slide1,
+    #s5:checked ~ #slide2 {
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      transform: translate3d(40%, 0, -250px);
+    }
+
+    /* Previous to Previous Slide */
+    #s1:checked ~ #slide4,
+    #s2:checked ~ #slide5,
+    #s3:checked ~ #slide1,
+    #s4:checked ~ #slide2,
+    #s5:checked ~ #slide3 {
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      transform: translate3d(-40%, 0, -250px);
+    }
+
+    /* Previous Slide */
+    #s1:checked ~ #slide5,
+    #s2:checked ~ #slide1,
+    #s3:checked ~ #slide2,
+    #s4:checked ~ #slide3,
+    #s5:checked ~ #slide4 {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+      transform: translate3d(-20%, 0, -100px);
+    }
+
+    #s1:checked ~ #slide1 .description,
+    #s2:checked ~ #slide2 .description,
+    #s3:checked ~ #slide3 .description,
+    #s4:checked ~ #slide4 .description,
+    #s5:checked ~ #slide5 .description {
+      display: block;
+    }
+    </style>
 
 </head>
 
@@ -131,13 +264,13 @@
             </div>
           </div>
         </div>
-        <div class="col-md-8 slider-container"> 
+        <div class="col-md-8 slider-container">
           <div class="offering-summary">
-             <!-- navigation tabs -->
+            <!-- navigation tabs -->
             <div class="offering-titles">
               <div class="offering-title-state">
                 <div class="sub-headline-copy-sub-headline-wrapper1">
-                  <button class="sub-headline-copy-container" onclick="goToSlide(0)">Residential </button>
+                  <button class="sub-headline-copy-container" onclick="goToSlide(0)">Residential</button>
                 </div>
               </div>
               <div class="instance-container">
@@ -152,35 +285,31 @@
               </div>
             </div>
 
-
             <div class="quick-menu-parent">
               <div class="carousel-container mx-auto position-relative">
                 <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                      <div class="carousel-item active">
-                          <img src= "./public/rectangle-42@2x.png" class="instance-inner" alt="Slide 1">
-                      </div>
-                      <div class="carousel-item">
-                        <img src= "./public/rectangle-42@2x.png" class="instance-inner" alt="Slide 2">
-                      </div>
-                      <div class="carousel-item">
-                        <img src="./public/rectangle-42@2x.png" class="instance-inner" alt="Slide 3">
-                      </div>
+                  <div class="carousel-inner">
+                    <div class="carousel-item active">
+                      <img src="./public/rectangle-42@2x.png" class="instance-inner" alt="Slide 1">
                     </div>
-                    <!-- next and previous arrows -->
-                    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-                      <span class="carousel-control-prev-icon" aria-hidden="true">
-                      </span>
-                      <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-                      <span class="carousel-control-next-icon" aria-hidden="true">
-                      </span>
-                      <span class="visually-hidden">Next</span>
-                    </button>
+                    <div class="carousel-item">
+                      <img src="./public/rectangle-42@2x.png" class="instance-inner" alt="Slide 2">
+                    </div>
+                    <div class="carousel-item">
+                      <img src="./public/rectangle-42@2x.png" class="instance-inner" alt="Slide 3">
+                    </div>
+                  </div>
+                  <!-- next and previous arrows -->
+                  <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
                 </div>
-            </div>
-           
+              </div>
             </div>
           </div>
         </div>
@@ -317,31 +446,70 @@
 
 
 
-  <div class="container sophi-section">
-    <div class="container comprehensive">
-      <div class="float-left-section">
-        <h1><b>Beauty & Sophistication</b> <br>Etched Into Each Detail  </h1>
-        <hr>
-        <p>We design spaces and craft experiences. Discover <br>our collection of timeless commissions.</p>
-      </div>
-
-      <div id="slider" class="slider">
-        <div class="background"></div>
-        <div class="item item-1">
-          <img src="img/countryside.png" alt="1">
-          <p class="slider-text" style="position: absolute; top: 20px;">Text for slide 1</p>
-        </div>
-        <div class="item item-2">
-          <img src="img/countryside-inside.png" alt="2">
-          <p class="slider-text">Text for slide 2</p>
-        </div>
-        <div class="item item-3">
-          <img src="img/hilltop.png" alt="3">
-          <p class="slider-text">Text for slide 3</p>
-        </div>
-      </div>
+<div class="container sophi-section">
+  <div class="container comprehensive">
+    <div class="float-left-section">
+      <h1><b>Beauty & Sophistication</b> <br>Etched Into Each Detail</h1>
+      <hr>
+      <p>We design spaces and craft experiences. Discover <br>our collection of timeless commissions.</p>
     </div>
   </div>
+</div>
+
+<section id="slider">
+  <input type="radio" name="slider" id="s1" checked>
+  <input type="radio" name="slider" id="s2">
+  <input type="radio" name="slider" id="s3">
+  <input type="radio" name="slider" id="s4">
+  <input type="radio" name="slider" id="s5">
+
+  <label for="s1" id="slide1">
+    <img src="img/countryside-inside.png" alt="">
+    <div class="description">
+        <h2 style="color:#001B72; font-family: poppins;">Hilltop, Plettenberg Bay</h2>
+        <p style="font-size: 12px; font-family: poppins; color: grey; font-weight: 100;">
+            What began as a small beach house with a stunning view, but soon became a magnificent, spacious and airy holiday home where the whole family can relax in comfort. Our clients received a home that generously accommodated their living needs with ample bedrooms well-designed kitchen and dining area.
+        </p>
+      </div>
+  </label>
+  <label for="s2" id="slide2">
+    <img src="img/hilltop.png" alt="">
+    <div class="description">
+        <h2 style="color:#001B72; font-family: poppins;">Hilltop, Plettenberg Bay</h2>
+        <p style="font-size: 12px; font-family: poppins; color: grey; font-weight: 100;">
+            What began as a small beach house with a stunning view, but soon became a magnificent, spacious and airy holiday home where the whole family can relax in comfort. Our clients received a home that generously accommodated their living needs with ample bedrooms well-designed kitchen and dining area.
+        </p>
+    </div>
+  </label>
+  <label for="s3" id="slide3">
+    <img src="img/countryside.png" alt="">
+    <div class="description">
+        <h2 style="color:#001B72; font-family: poppins;">Hilltop, Plettenberg Bay</h2>
+        <p style="font-size: 12px; font-family: poppins; color: grey; font-weight: 100;">
+            What began as a small beach house with a stunning view, but soon became a magnificent, spacious and airy holiday home where the whole family can relax in comfort. Our clients received a home that generously accommodated their living needs with ample bedrooms well-designed kitchen and dining area.
+        </p>
+    </div>
+  </label>
+  <label for="s4" id="slide4">
+    <img src="img/countryside-inside.png" alt="">
+    <div class="description">
+      <h2 style="color:#001B72; font-family: poppins;">Hilltop, Plettenberg Bay</h2>
+      <p style="font-size: 12px; font-family: poppins; color: grey; font-weight: 100;">
+          What began as a small beach house with a stunning view, but soon became a magnificent, spacious and airy holiday home where the whole family can relax in comfort. Our clients received a home that generously accommodated their living needs with ample bedrooms well-designed kitchen and dining area.
+      </p>
+    </div>
+  </label>
+  <label for="s5" id="slide5">
+    <img src="img/countryside.png" alt="">
+    <div class="description">
+        <h2 style="color:#001B72; font-family: poppins;">Hilltop, Plettenberg Bay</h2>
+        <p style="font-size: 12px; font-family: poppins; color: grey; font-weight: 100;">
+            What began as a small beach house with a stunning view, but soon became a magnificent, spacious and airy holiday home where the whole family can relax in comfort. Our clients received a home that generously accommodated their living needs with ample bedrooms well-designed kitchen and dining area.
+        </p>
+    </div>
+  </label>
+</section>
+
 
 <!-- slider with houses -->
 
@@ -409,18 +577,35 @@
 
 
   <script>
-    function goToSlide(slideIndex) {
+// function goToSlide(slideIndex) {
+//   console.log('Navigating to slide:', slideIndex);
+//   const carousel = document.getElementById('myCarousel');
+//   const carouselInstance = new bootstrap.Carousel(carousel);
+//   carouselInstance.to(slideIndex);
+// }
+
+   function goToSlide(slideIndex) {
+     console.log('Navigating to slide:', slideIndex);
       const carousel = document.getElementById('myCarousel');
-      const carouselInstance = new bootstrap.Carousel(carousel);
+      const carouselInstance = bootstrap.Carousel.getOrCreateInstance(carousel);
       carouselInstance.to(slideIndex);
     }
+
+
+
   </script>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
+      <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
   <script src="./lib/wow/wow.min.js"></script>
   <script src="./lib/easing/easing.min.js"></script>
   <script src="./lib/waypoints/waypoints.min.js"></script>
   <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
