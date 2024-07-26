@@ -1,94 +1,79 @@
-
-.navbar-expand-lg .navbar-toggler {
-    display: block;
-}
-
-.navbar-logo {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.navbar-toggler {
-    border: none;
-    background: none;
-}
-
-.navbar-toggler-icon {
-    color: black;
-}
-
-.navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1; /* Top bar z-index */
-}
-
-.sidebar {
-    height: 70%;
-    position: fixed;
-    z-index: 2;
-    top: 0;
-    right: 0;
-    background-color: #001B72;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-    width: 0;
-}
-
-.sidebar a {
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 25px;
-    color: white;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidebar a:hover {
-    color: #f1f1f1;
-}
-
-.sidebar .closebtn {
-    position: absolute;
-    top: 20px;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-    background-color: #FFB648;
-    color: black;
-    border-radius: 25px;
-}
-
-.overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    right: 0;
-    background-color: #ffffffc9;
-    overflow-x: hidden;
-    transition: 0.5s;
-}
-
-.scrolled {
-    background-color: #e5e5e5b5 !important;
-}
-
-.logo1 {
-    display: inline;
-}
-
-.logo2 {
-    display: none;
-}
-
-.scrolled .logo1 {
-    display: none;
-}
-
-.scrolled .logo2 {
-    display: inline;
-}
+    .navbar-expand-lg .navbar-toggler {
+        display: block;
+    }
+    .navbar-logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbar-toggler {
+        border: none;
+        background: none;
+    }
+    .navbar-toggler-icon {
+        color: black;
+    }
+    .navbar {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .sidebar {
+        height: 70%;
+        position: fixed;
+        z-index: 2;
+        top: 0;
+        right: 0;
+        background-color: #001B72;
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 60px;
+        width: 0;
+    }
+    .sidebar a {
+        padding: 10px 15px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+        transition: 0.3s;
+    }
+    .sidebar a:hover {
+        color: #f1f1f1;
+    }
+    .sidebar .closebtn {
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        font-size: 36px;
+        margin-left: 50px;
+        background-color: #FFB648;
+        color: black;
+        border-radius: 25px;
+    }
+    .overlay {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        right: 0;
+        background-color: #ffffffc9;
+        overflow-x: hidden;
+        transition: 0.5s;
+    }
+    .scrolled {
+        background-color: #e5e5e5b5 !important;
+    }
+    .logo1 {
+        display: inline;
+    }
+    .logo2 {
+        display: none;
+    }
+    .scrolled .logo1 {
+        display: none;
+    }
+    .scrolled .logo2 {
+        display: inline;
+    }
