@@ -216,7 +216,7 @@
 }
 
 .icon-card .default-image-2:hover {
-  content: url('../img/icons/Concept-hover.svg'); /* Change to your hover image */
+  content: url('../img/icons/concept-hover.svg'); /* Change to your hover image */
 }
 
 .icon-card .default-image-3:hover {
