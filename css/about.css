@@ -189,7 +189,9 @@
 }
 
 .icon-section {
-  padding-top: 250px;
+  /*padding-top: 250px;*/
+  margin-top: 170px;
+  margin-bottom: 50px;
 }
 
 .icon-section .icon {
@@ -208,7 +210,7 @@
   transition: opacity 0.5s ease;
 }
 
-.icon-card .default-image {
+/*.icon-card .default-image {
   opacity: 1;
 }
 
@@ -223,7 +225,7 @@
 .icon-card:hover .hover-image {
   opacity: 1;
 }
-
+*/
 @media (max-width: 767.98px) {
     .icon-section .carousel-inner {
         display: flex;
