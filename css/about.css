@@ -189,7 +189,6 @@
 }
 
 .icon-section {
-  /*padding-top: 250px;*/
   margin-top: 170px;
   margin-bottom: 50px;
 }
@@ -209,6 +208,22 @@
   height: 100%;
   transition: opacity 0.5s ease;
 }
+
+/* New CSS for hover effect */
+.icon-card .default-image:hover {
+  content: url('../img/icons/conception-hover.svg'); /* Change to your hover image */
+  /*width: 200px;*/
+}
+
+.icon-card .default-image-2:hover {
+  content: url('../img/icons/Concept-hover.svg'); /* Change to your hover image */
+}
+
+.icon-card .default-image-3:hover {
+  content: url('../img/icons/Production-hover.svg'); /* Change to your hover image */
+}
+
+
 
 /*.icon-card .default-image {
   opacity: 1;
