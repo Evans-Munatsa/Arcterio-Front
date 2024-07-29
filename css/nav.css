@@ -77,3 +77,21 @@
     .scrolled .logo2 {
         display: inline;
     }
+
+
+.logo1 {
+    width: 10%;
+}
+
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+
+  .logo1 {
+    width: 45%;
+  }
+
+  .navbar-logo{
+    width: 45%
+  }
+}

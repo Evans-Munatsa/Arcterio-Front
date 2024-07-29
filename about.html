@@ -23,6 +23,138 @@
     <link rel="stylesheet" type="text/css" href="css/footer.css">
   <link rel="stylesheet" type="text/css" href="css/about.css">
 
+  <style>
+    #slider {
+      position: relative;
+      /*top: 175px;*/
+      /*width: 50%;*/
+      width: 50%;
+      height: 32vw;
+      /*height: 45vw;*/
+      margin: 150px auto;
+      font-family: 'poppins', sans-serif;
+      perspective: 1400px;
+      transform-style: preserve-3d;
+      text-align: left;
+    }
+
+    input[type=radio] {
+      position: relative;
+      top: 108%;
+      left: 50%;
+      width: 18px;
+      height: 18px;
+      margin: 0 15px 0 0;
+      opacity: 0.4;
+      transform: translateX(-83px);
+      cursor: pointer;
+      display: none;
+    }
+
+    input[type=radio]:nth-child(5) {
+      margin-right: 0px;
+    }
+
+    input[type=radio]:checked {
+      opacity: 1;
+    }
+
+    #slider label,
+    #slider label img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      color: white;
+      font-size: 70px;
+      font-weight: bold;
+      border-radius: 30px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: transform 400ms ease;
+    }
+
+        #slider label .description {
+      position: relative;
+      /* bottom: 20px; */
+      left: 25%;
+      transform: translateX(-50%);
+      /*background: rgba(0, 0, 0, 0.6);*/
+      background: inherit;
+      color: white;
+      /* padding: 10px 20px; */
+      border-radius: 5px;
+      font-size: 16px;
+      display: none;
+      /*top: 340px;*/
+      top: 22vw;
+      width: 75%;
+    }
+
+    /* Slider Functionality */
+
+    /* Active Slide */
+    #s1:checked ~ #slide1,
+    #s2:checked ~ #slide2,
+    #s3:checked ~ #slide3,
+    #s4:checked ~ #slide4,
+    #s5:checked ~ #slide5 {
+      box-shadow: 0 13px 26px rgba(0, 0, 0, 0.3), 0 12px 6px rgba(0, 0, 0, 0.2);
+      transform: translate3d(0%, 0, 0px);
+    }
+
+    /* Next Slide */
+    #s1:checked ~ #slide2,
+    #s2:checked ~ #slide3,
+    #s3:checked ~ #slide4,
+    #s4:checked ~ #slide5,
+    #s5:checked ~ #slide1 {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+      transform: translate3d(20%, 0, -100px);
+    }
+
+    /* Next to Next Slide */
+    #s1:checked ~ #slide3,
+    #s2:checked ~ #slide4,
+    #s3:checked ~ #slide5,
+    #s4:checked ~ #slide1,
+    #s5:checked ~ #slide2 {
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      transform: translate3d(40%, 0, -250px);
+    }
+
+    /* Previous to Previous Slide */
+    #s1:checked ~ #slide4,
+    #s2:checked ~ #slide5,
+    #s3:checked ~ #slide1,
+    #s4:checked ~ #slide2,
+    #s5:checked ~ #slide3 {
+      box-shadow: 0 1px 4px rgba(0, 0, 0, 0.4);
+      transform: translate3d(-40%, 0, -250px);
+    }
+
+    /* Previous Slide */
+    #s1:checked ~ #slide5,
+    #s2:checked ~ #slide1,
+    #s3:checked ~ #slide2,
+    #s4:checked ~ #slide3,
+    #s5:checked ~ #slide4 {
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3), 0 2px 2px rgba(0, 0, 0, 0.2);
+      transform: translate3d(-20%, 0, -100px);
+    }
+
+    #s1:checked ~ #slide1 .description,
+    #s2:checked ~ #slide2 .description,
+    #s3:checked ~ #slide3 .description,
+    #s4:checked ~ #slide4 .description,
+    #s5:checked ~ #slide5 .description {
+      display: block;
+    }
+  </style>
+
 </head>
 
 
@@ -33,7 +165,7 @@
   <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="width: 90%; margin: auto; background: #e5e5e5; border-radius: 25px; padding: 1rem 3rem; top: 2rem;">
     <img src="img/icons/phone.svg" class="bi bi-telephone">
     <a class="navbar-logo" href="#" style="text-align:center;">
-      <img src="img/logos/arcterio.png" class="logo1" id="logo" style="width: 10%;">
+      <img src="img/logos/arcterio.png" class="logo1" id="logo">
       <img src="img/logos/arcterio-logo-icon.png" class="logo2" alt="Logo 2" style="width: 2rem;">
     </a>
     <button class="navbar-toggler" type="button">
@@ -161,7 +293,7 @@
           <div class="col-md-6"> 
             <h2>We Labour Over Every Detail <br>To Give You A Space That <br> Caters To Your Every Need <br>
             <hr />
-            <img src="img/group.png" style="width: 650px" class="">
+            <img src="img/group.png" class="">
             <h2>The Art of <b>Refined</b> <br>Design <b>Elegance</b><br>
             <hr/>
             <p >Our company values are what guide us as we strive to be the best, to fulfill our goal to pioneer sustainable food solutions in the catering world and to align every decision we make as a team.</p>
@@ -412,7 +544,7 @@
 
 
 <!-- blog preview section -->
-      <div class="houser">
+     <!--  <div class="houser">
         <input type="radio" name="position" checked />
         <input type="radio" name="position" />
         <input type="radio" name="position" />
@@ -426,11 +558,63 @@
           <div class="item"></div>
           <div class="item"></div>
         </main>
-      </div>
+      </div> -->
+<!-- blog preview old ends -->
 
       <!-- potential blog preview start-->
+    <section id="slider">
+      <input type="radio" name="slider" id="s1" checked>
+      <input type="radio" name="slider" id="s2">
+      <input type="radio" name="slider" id="s3">
+      <input type="radio" name="slider" id="s4">
+      <input type="radio" name="slider" id="s5">
 
-
+      <label for="s1" id="slide1">
+        <img src="img/countryside-inside.png" alt="">
+        <div class="description">
+            <h2 style="color:#001B72; font-family: poppins;">Blog Heading Here</h2>
+            <p style="font-size: 12px; font-family: poppins; color: grey; font-weight: 100;">
+                What began as a small beach house with a stunning view, but soon became a magnificent, spacious and airy holiday home where the whole family can relax in comfort. Our clients received a home that generously accommodated their living needs with ample bedrooms well-designed kitchen and dining area.
+            </p>
+          </div>
+      </label>
+      <label for="s2" id="slide2">
+        <img src="img/hilltop.png" alt="">
+        <div class="description">
+            <h2 style="color:#001B72; font-family: poppins;">Blog Heading Here</h2>
+            <p style="font-size: 12px; font-family: poppins; color: grey; font-weight: 100;">
+                What began as a small beach house with a stunning view, but soon became a magnificent, spacious and airy holiday home where the whole family can relax in comfort. Our clients received a home that generously accommodated their living needs with ample bedrooms well-designed kitchen and dining area.
+            </p>
+        </div>
+      </label>
+      <label for="s3" id="slide3">
+        <img src="img/countryside.png" alt="">
+        <div class="description">
+            <h2 style="color:#001B72; font-family: poppins;">Blog Heading Here</h2>
+            <p style="font-size: 12px; font-family: poppins; color: grey; font-weight: 100;">
+                What began as a small beach house with a stunning view, but soon became a magnificent, spacious and airy holiday home where the whole family can relax in comfort. Our clients received a home that generously accommodated their living needs with ample bedrooms well-designed kitchen and dining area.
+            </p>
+        </div>
+      </label>
+      <label for="s4" id="slide4">
+        <img src="img/countryside-inside.png" alt="">
+        <div class="description">
+          <h2 style="color:#001B72; font-family: poppins;">Blog Heading Here</h2>
+          <p style="font-size: 12px; font-family: poppins; color: grey; font-weight: 100;">
+              What began as a small beach house with a stunning view, but soon became a magnificent, spacious and airy holiday home where the whole family can relax in comfort. Our clients received a home that generously accommodated their living needs with ample bedrooms well-designed kitchen and dining area.
+          </p>
+        </div>
+      </label>
+      <label for="s5" id="slide5">
+        <img src="img/countryside.png" alt="">
+        <div class="description">
+            <h2 style="color:#001B72; font-family: poppins;">Blog Heading Here</h2>
+            <p style="font-size: 12px; font-family: poppins; color: grey; font-weight: 100;">
+                What began as a small beach house with a stunning view, but soon became a magnificent, spacious and airy holiday home where the whole family can relax in comfort. Our clients received a home that generously accommodated their living needs with ample bedrooms well-designed kitchen and dining area.
+            </p>
+        </div>
+      </label>
+    </section>
       <!-- potential blog preview end -->
 
       <div class="simplicity">
@@ -485,35 +669,7 @@
 
 
     <script>
-        // $(document).ready(function(){
-        //     $('.sponsor-carousel').slick({
-        //         infinite: true,
-        //         slidesToShow: 3,
-        //         slidesToScroll: 1,
-        //         autoplay: true,
-        //         autoplaySpeed: 2000,
-        //         responsive: [
-        //             {
-        //                 breakpoint: 768,
-        //                 settings: {
-        //                     slidesToShow: 2,
-        //                     slidesToScroll: 1
-        //                 }
-        //             },
-        //             {
-        //                 breakpoint: 480,
-        //                 settings: {
-        //                     slidesToShow: 1,
-        //                     slidesToScroll: 1
-        //                 }
-        //             }
-        //         ]
-        //     });
-        // });
-
-
-
-        document.querySelectorAll(".image-comparison").forEach(comparison => {
+      document.querySelectorAll(".image-comparison").forEach(comparison => {
         const slider = comparison.querySelector(".slider");
         const beforeImage = comparison.querySelector(".before-image");
         const sliderLine = comparison.querySelector(".slider-line");
@@ -526,6 +682,17 @@
           sliderIcon.style.left = `${value}%`;
         });
       });
+
+
+
+
+      // code for the blog prview
+      function goToSlide(slideIndex) {
+       console.log('Navigating to slide:', slideIndex);
+        const carousel = document.getElementById('myCarousel');
+        const carouselInstance = bootstrap.Carousel.getOrCreateInstance(carousel);
+        carouselInstance.to(slideIndex);
+      }
     </script>
 
 

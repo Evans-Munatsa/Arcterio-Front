@@ -1,4 +1,89 @@
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .about-hero h1 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #001B72;
+  }
+
+  .about-hero p {
+    font-size: 10px;
+    font-weight: 400;
+    font-family: poppins;
+    color: #001B72;
+  }
+
+    .experties h2 {
+      font-size: 28px;
+      line-height: 42px;
+      text-align: center;
+      padding-top: 30px;
+  }
+
+  .experties {
+    text-align: center;
+  }
+
+  .experties .img-fluid {
+    vertical-align: middle;
+    border-style: none;
+    border-radius: 25px;
+    width: 280px;
+    height: 180px;
+  }
+
+  .labour h2 {
+    font-size: 18px;
+    font-weight: 300;
+    color: white;
+    line-height: 30px;
+    text-align: right;
+  }
+
+  .labour hr {
+    background-color: #FFB648;
+    width: 100px;
+    height: 12px;
+    opacity: 1;
+    float: right;
+  }
+
+  .labour img {
+    /*width: 330px;*/
+    width: 85%;
+    padding-left: 10px;
+  }
+
+
+  .labour p {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: poppins;
+    color: #fff;
+    line-height: 29px;
+    /* padding-bottom: 40px; */
+    padding-top: 54px;
+    text-align: left;
+    width: 80%;
+  }
+}
+
+
+
+
+
+/*marieke image*/
+.labour img {
+  width: 650px;
+}
+
+
 .labour hr {
   background-color: #FFB648;
   width: 100px;
@@ -62,9 +147,18 @@
   border-top: 5px solid #FFB648;
 }
 
-@media (max-width: 768px) {
+.labour p{
+  font-size: 16px;
+  font-weight: 400;
+  font-family: poppins;
+  color: #fff;
+  line-height: 24px;
+  padding-bottom: 40px;
+}
 
-  .about-hero h1 {
+/*@media (max-width: 768px) {*/
+
+/*  .about-hero h1 {
     font-size: 30px;
     font-weight: 600;
     color: #001B72;
@@ -75,7 +169,7 @@
     font-weight: 400;
     font-family: poppins;
     color: #001B72;
-  }
+  }*/
   .experties .residential {
     padding-top: 50px;
   }
@@ -94,7 +188,7 @@
     font-size: 14px;
     line-height: 20px;
   }
-}
+/*}*/
 
 
 .img-fluid {
@@ -122,10 +216,7 @@
   color: white;
   line-height: 54px;
 
- /* ont-size: 36px;
-  font-weight: 300;
-  color: white;
-  line-height: 54px;*/
+
 }
 
 .labour h3{
@@ -136,14 +227,7 @@
   color: white;
 }
 
-.labour p{
-  font-size: 16px;
-  font-weight: 400;
-  font-family: poppins;
-  color: #fff;
-  line-height: 24px;
-  padding-bottom: 40px;
-}
+
 
 .labour img{
   width: 100%;
