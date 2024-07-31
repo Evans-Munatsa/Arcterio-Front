@@ -1,3 +1,15 @@
+/* Define the navy blue color */
+.navy-blue {
+  color: navy;
+  font-weight: bold;
+}
+
+/* Apply the navy blue class to the active h3 element */
+.carousel-item.active h3 {
+  color: navy;
+  font-weight: bold;
+}
+
 
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
@@ -295,7 +307,7 @@
 
 /* New CSS for hover effect */
 .icon-card .default-image:hover {
-  content: url('../img/icons/conception-hover.svg'); /* Change to your hover image */
+  content: url('../img/icons/conception-2.svg'); /* Change to your hover image */
   /*width: 200px;*/
 }
 
@@ -304,7 +316,7 @@
 }
 
 .icon-card .default-image-3:hover {
-  content: url('../img/icons/Production-hover.svg'); /* Change to your hover image */
+  content: url('../img/icons/production-2.svg'); /* Change to your hover image */
 }
 
 
