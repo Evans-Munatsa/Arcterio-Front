@@ -202,7 +202,7 @@ p {
 
 /* waves header section */
 .waves-header {
-  background: url(../img/hilltop.png) center center no-repeat;
+  /*background: url(../img/hilltop.png) center center no-repeat;*/
   background-size: cover;
   min-height: 90vh;
   position: relative;
@@ -1271,7 +1271,8 @@ div {
 .header-text {
     width: 100%;
     position: absolute;
-    bottom: 90px;
+    /*bottom: 90px;*/
+    bottom: 45px;
     /*left: -100%;*/
     /*animation: slideIn 2s forwards;*/
     /*margin-bottom: 2rem;*/
