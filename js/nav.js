@@ -1,7 +1,7 @@
 $(document).ready(function() {
         $(".navbar-toggler").click(function() {
             $(".overlay").css("width", "100%");
-            $("#sidebar").css("width", "40vw");
+            $("#sidebar").css("width", "50vw");
             localStorage.setItem('sidebarState', 'open');
         });
 
@@ -15,7 +15,7 @@ $(document).ready(function() {
         $(window).on('load', function() {
             if (localStorage.getItem('sidebarState') === 'open') {
                 $(".overlay").css("width", "100%");
-                $("#sidebar").css("width", "40vw");
+                $("#sidebar").css("width", "50vw");
             } else {
                 $(".overlay").css("width", "0");
                 $("#sidebar").css("width", "0");
