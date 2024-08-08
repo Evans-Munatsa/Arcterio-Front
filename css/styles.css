@@ -1016,15 +1016,15 @@ CSS.g-6,
 }
 
 .sponsor-logo {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  /*border-radius: 50%;*/
   overflow: hidden;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 10px;
-  background-color: #D9D9D9;
+  /*background-color: #D9D9D9;*/
 }
 
 .slick-slide {
