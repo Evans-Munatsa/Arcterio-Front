@@ -11,6 +11,23 @@
 }
 
 
+body {
+      /*background-image: linear-gradient(rgb(255 255 267 / 99%), rgb(244 243 243 / 82%)), url(../img/backgrounds/about-background.png);*/
+  background-image: linear-gradient(rgb(255 255 255 / 86%), rgb(244 243 243 / 82%)), url(../img/backgrounds/about-background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+
+.labour .vector-img{
+  position: absolute;
+  width: 70rem;
+  /* height: 100%; */
+  left: 48vw;
+  top: 277px;
+}
+}
+
 @media only screen and (max-width: 768px) {
   /* For mobile phones: */
   body {
