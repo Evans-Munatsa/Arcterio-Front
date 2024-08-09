@@ -1,4 +1,9 @@
-.plan-1-icon4 {
+
+/*.commissions-desktop {
+  background-image: url(./img/backgrounds/plan.png);
+}*/
+
+/*.plan-1-icon4 {
   position: absolute;
   height: 102.76%;
   width: 151.46%;
@@ -10,7 +15,26 @@
   overflow: hidden;
   max-height: 100%;
   object-fit: contain;
+}*/
+
+
+.plan-1-icon4 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* top: -6.48%; */
+    /* right: -38.29%; */
+    /* bottom: 3.72%; */
+    /* left: -13.16%; */
+    /* max-width: 100%; */
+    overflow: hidden;
+    /* max-height: 100%; */
+    object-fit: cover;
+    overlay: red;
+    /* background: linear-gradient(to bottom right, rgb(240 240 240 / 98%), rgb(255 255 255 / 72%)); */
+    opacity: 0.5;
 }
+
 .commissions-desktop-child,
 .image-hover-states-inner {
   position: absolute;
@@ -442,6 +466,8 @@
   width: 100%;
   position: relative;
   background-color: var(--color-whitesmoke);
+  background-image: url(./img/backgrounds/plan.png);
+
   /*height: 2903px;*/
   height: 2480px;
   overflow: hidden;
@@ -450,6 +476,9 @@
   color: var(--color-white);
   font-family: var(--c3);
 }
+
+
+
 
 
 

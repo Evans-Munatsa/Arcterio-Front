@@ -1,0 +1,38 @@
+. hearder-image {
+	min-height: 400px;
+	/*background-color: red;*/
+	background: url(../img/architecture.jpg);
+	background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.blog-title {
+	padding-top: 5rem;
+}
+
+.blog-title h1 {
+	font-family: poppins;
+	color: #001B72;
+    font-size: 58px;
+    font-weight: 300;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: #001B72;
+}
+
+
+.mid-section-image {
+    height: 500px;
+    width: 100%;
+}
+
+.mid-section-image-2 {
+    height: 700px;
+    /*width: 100%;*/
+}
+
+p {
+	/*padding-top: 5rem;*/
+	padding-bottom: 1rem;
+}
