@@ -44,6 +44,35 @@ p {
 }
 
 
+.bottom-background {
+    position: absolute;
+    /* bottom: -41px; */
+    /* top: 5640px; */
+    top: 376vw;
+    width: 100%;
+    min-height: 800px;
+    height: 1000px;
+    background-repeat: no-repeat;
+}
+
+.canvas-section {
+  position: absolute;
+  left: 85rem;
+  /*top: 15rem;*/
+  top: 615rem;
+  z-index: 2;
+}
+
+.canvas-section h1 {
+  font-size: 36px;
+  font-weight: 300;
+  color: #001B72;
+}
+
+.canvas-section p {
+  font-size: 14px;
+  color: #000000;
+}
 /*slider*/
 
 
@@ -761,7 +790,49 @@ banner
 
 /* home section end */
 
+.btn {
+  background-color: #001B72;
+  border-radius: 5rem;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  float: left;
+  font-family: 'Poppins';
+  font-size: small;
+}
 
+.btn:hover {
+  background-color: #3A3A3A;
+}
+
+.btn img{
+  padding-left: 18px;
+}
+
+
+.btn-learn-more {
+  background-color: inherit;
+  border-radius: 5rem;
+  border: solid;
+  border-width: 2px;
+  color: #001B72;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  float: left;
+  font-family: 'Poppins';
+  font-size: small;
+}
+
+.btn .btn-learn-more:hover {
+  background-color: #001B72;
+}
+
+/*.btn img{
+  padding-left: 18px;
+}*/
 
 
 /*  legacy sections  */
@@ -799,7 +870,8 @@ banner
   border-radius: 900px;
   height: 560px;
   position: relative;
-  left: 45%;
+  /*left: 45%;*/
+  left: 15%;
 }
 
 .gif-image{

@@ -1,7 +1,7 @@
-. hearder-image {
+.hearder-image {
 	min-height: 400px;
 	/*background-color: red;*/
-	background: url(../img/architecture.jpg);
+	background: url(../img/backgrounds/blog.png);
 	background-size: cover;
     background-repeat: no-repeat;
 }
@@ -23,7 +23,8 @@ h1, h2, h3, h4, h5, h6 {
 
 
 .mid-section-image {
-    height: 500px;
+    /*height: 500px;*/
+    height: 100%;
     width: 100%;
 }
 
