@@ -115,9 +115,9 @@ p {
 
 /*header slider syles*/
 .header-slider-controls{
-  width: 8rem;
-  height: 5rem;
-  border: 5px solid #ffffff;
+  width: 7rem;
+  height: 6rem;
+  border: 3px solid #ffffff;
   border-radius: 40px;
 }
 
@@ -830,6 +830,28 @@ banner
   background-color: #001B72;
 }
 
+.btn-learn-blog {
+  background-color: inherit;
+  border-radius: 5rem;
+  border: solid;
+  border-width: 2px;
+  color: #001B72;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 14px;
+  float: left;
+  font-family: 'Poppins';
+  font-size: small;
+
+  float: right;
+  position: relative;
+  left: 20rem;
+  bottom: 10rem;
+}
+
+.btn-learn-blog .download-arrow{
+  padding-left: 18px;
+}
 /*.btn img{
   padding-left: 18px;
 }*/

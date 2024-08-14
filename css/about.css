@@ -157,9 +157,9 @@ body {
   line-height: 24px;
 }
 
-.experties .residential {
+/*.experties .residential {
   padding-top: 140px;
-}
+}*/
 
 .experties .residential .header {
   font-size: 26px;
@@ -200,7 +200,7 @@ body {
     color: #001B72;
   }*/
   .experties .residential {
-    padding-top: 50px;
+    padding-top: 130px;
   }
 
   .experties h2 {

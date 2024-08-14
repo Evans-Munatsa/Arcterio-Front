@@ -24,27 +24,39 @@
         z-index: 2;
         top: 0;
         right: 0;
-        background-color: #001B72;
+        /*background-color: #001B72;*/
+        background-color: #001b72d6;
         overflow-x: hidden;
         transition: 0.5s;
         padding-top: 60px;
         width: 0;
     }
+
+
+
     .sidebar a {
-        padding: 10px 15px;
+        /*padding: 10px 15px;*/
+        padding: 10px 105px;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 35px;
         color: white;
         display: block;
         transition: 0.3s;
+        font-family: poppins;
+        font-weight: 100;
     }
+
     .sidebar a:hover {
         color: #f1f1f1;
     }
+
     .sidebar .closebtn {
+        padding: 10px 15px;
         position: absolute;
-        top: 20px;
-        right: 25px;
+        /*top: 20px;*/
+        top: -40px;
+        /*right: 25px;*/
+        right: 105px;
         font-size: 36px;
         margin-left: 50px;
         background-color: #FFB648;
