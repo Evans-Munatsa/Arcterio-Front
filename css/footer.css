@@ -6,8 +6,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-height: 400px;
-  height: 950px;
+  /*min-height: 400px;*/
+  /*height: 950px;*/
+  min-height: 100rem;
+  height: 100rem;
   padding: 100px 12vw;
   background-image: url(../img/footer/main-footer-container.png);
    /*background-color: #ffffff52; */
