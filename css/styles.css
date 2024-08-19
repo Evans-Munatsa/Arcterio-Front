@@ -51,8 +51,8 @@ p {
     /*top: 376vw;*/
     top: 600rem;
     width: 100%;
-    min-height: 100rem;
-    height: 100rem;
+    min-height: 70rem;
+    height: 100%;
     background-repeat: no-repeat;
 }
 
