@@ -57,10 +57,10 @@ p {
 }
 
 .canvas-section {
-  position: absolute;
+  position: relative;
   left: 100rem;
   /*top: 15rem;*/
-  top: 635rem;
+  top: 20rem;
   z-index: 2;
 }
 
