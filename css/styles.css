@@ -58,9 +58,9 @@ p {
 
 .canvas-section {
   position: absolute;
-  left: 85rem;
+  left: 100rem;
   /*top: 15rem;*/
-  top: 615rem;
+  top: 635rem;
   z-index: 2;
 }
 
@@ -1117,7 +1117,7 @@ CSS.g-6,
 
 .sponsor-logo {
   width: 300px;
-  height: 300px;
+  height: 100px;
   /*border-radius: 50%;*/
   overflow: hidden;
   display: flex;
