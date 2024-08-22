@@ -24,11 +24,94 @@
         }
       }
 
-      .a-frame-house-1 {
-        animation: appear lenear;
-        animation-timeline: view();
-        animation-range: entry 0% cover 40%;
-      }
+.contact-form {
+    background: inherit;
+    padding: 20px;
+    border-radius: 8px;
+/*    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);*/
+/*    width: 350px;*/
+    width: 30rem;
+    position: relative;
+    z-index: 2;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group select {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2em;
+    font-size: 14px;
+    width: 50%;
+    box-sizing: border-box;
+    background-color: inherit;
+    appearance: none; /* Removes default arrow for custom styling */
+    background-image: url('./img/icons/arrow-icon.png'); /* SVG for custom arrow icon */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 12px;
+    cursor: pointer;
+}
+
+.form-group select:focus {
+    border-color: #001F5B;
+    outline: none;
+}
+
+
+
+.form-group input,
+.form-group textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 2em;
+    font-size: 14px;
+    width: 100%;
+    box-sizing: border-box;
+    background: inherit;
+}
+
+.form-group.flex-group {
+/*    display: flex;*/
+  display: block;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.form-group.flex-group input {
+    width: calc(50% - 5px);
+}
+
+.form-group textarea {
+    height: 100px;
+}
+
+.submit-btn {
+    background-color: #001F5B;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 2em;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15em;
+}
+
+.submit-btn:hover {
+    background-color: #000A3E;
+}
     </style>
   </head>
   <body>
@@ -155,7 +238,7 @@
               </div>
             </div>
           </div>
-          <div class="form-5">
+<!--           <div class="form-5">
             <div class="dropdown">
               <div class="dropdown-active">
                 <div class="project">
@@ -172,32 +255,13 @@
               </div>
             </div>
             <div class="name-container-parent">
-              <!-- <div class="surname-container"> -->
-                <!-- <div class="surname">Name</div> -->
                 <input type="text" class="form-control surname-container" id="formGroupExampleInput" placeholder="Name" style="width: 47%">
                 <input type="text" class="form-control surname-container" id="formGroupExampleInput" placeholder="Surname" style="width: 45%">
 
                  <input type="text" class="form-control email-container" id="formGroupExampleInput" placeholder="Email Address">
 
                 <input type="text" class="form-control new-residential" id="exampleFormControlTextarea1" rows="3" placeholder="Send us some details about your project" style="height: 150px;">
-
-
-              <!-- </div> -->
-              
-              <!-- <div class="surname-container">
-                <div class="surname">Surname</div>
-              </div> -->
-             <!--  <div class="emial-container">
-                <div class="e-mail">E-mail</div>
-              </div> -->
             </div>
-         <!--    <div class="notes-box">
-              <div class="new-residential-wrapper">
-                <div class="new-residential">
-                  Send us some details about your project
-                </div>
-              </div>
-            </div> -->
             <button class="view-portfolio-button15">
               <div class="button-text14">
                 <div class="learn-more3">Send</div>
@@ -206,7 +270,34 @@
                 <img class="arrow-child8" alt="" src="./public/arrow-1.svg" />
               </div>
             </button>
-          </div>
+          </div> -->
+
+    <form class="contact-form">
+        <div class="form-group">
+            <select id="project-type" name="project-type">
+                <option value="" disabled selected>Select Project Type</option>
+                <option value="new-residential">New Residential</option>
+                <option value="residential-renovations">Residential Renovations</option>
+                <option value="as-built-drawings">As-Built Drawings</option>
+                <option value="commercial-renovation">Commercial Renovation</option>
+            </select>
+        </div>
+
+        <div class="form-group flex-group">
+            <input type="text" id="first-name" name="first-name" placeholder="Name">
+            <input type="text" id="surname" name="surname" placeholder="Surname">
+        </div>
+
+        <div class="form-group">
+            <input type="email" id="email" name="email" placeholder="E-mail">
+        </div>
+
+        <div class="form-group">
+            <textarea id="details" name="details" placeholder="Send us some details about your project"></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Send</button>
+    </form>
         </div>
       </div>
 
