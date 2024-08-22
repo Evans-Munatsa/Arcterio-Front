@@ -509,7 +509,7 @@
   max-height: 100%;
 }
 .card-state-6 {
-  width: 170px;
+  width: 154px;
   position: relative;
   height: 205px;
 }
@@ -556,7 +556,7 @@
 .process-step {
   /*position: absolute;*/
   /*top: 3005px;*/
-  left: 117px;
+  left: 2em;
   flex-direction: row;
   gap: var(--gap-8xl);
   cursor: pointer;
@@ -580,7 +580,7 @@
   position: absolute;
   height: 8.9%;
   width: 2.13%;
-  top: 2.64%;
+  top: 4.64%;
   right: 70.64%;
   bottom: 88.46%;
   left: 27.23%;
@@ -589,7 +589,7 @@
 }
 .ellipse-div,
 .process-path-inner {
-  top: 81.41%;
+  top: 78.41%;
   right: 37.81%;
   bottom: 9.69%;
   left: 60.06%;
@@ -632,12 +632,15 @@
   /*top: 3232px;*/
   /*left: -145px;*/
   left: -170px;
-  width: 1267px;
-  height: 303.4px;
+/*  width: 1267px;*/
+/*  height: 303.4px;*/
+  width: 110rem;
+  height: 28rem;
 }
 .process-step2 {
   /*top: 3543px;*/
-  left: 516px;
+/*  left: 516px;*/
+  left: 13em;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -1334,15 +1337,35 @@
   align-self: stretch;
   flex: 1;
   position: relative;
-  border:  none;
+  border: none;
   background-color: inherit;
+  z-index: 2;
+  color: #0000006b;
+  font-family: Poppins, sans-serif;
+  font-size: 24px;
+  padding: 10px;
+  cursor: pointer;
+  transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+/* Change color to red when the button is active */
+.sub-headline-copy-container.active,
+.sub-headline-copy-container:focus,
+.sub-headline-copy-container:active {
+  color: #001B72;
+  font-weight: bolder;
+  outline: none; /* Removes default focus outline */
+/*  border-bottom: 1px solid #888;*/
+  text-decoration: underline;
+  text-decoration-thickness: 5px;
+  text-decoration-color: #FFB648;
 }
 .offering-titles {
   display: flex;
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: 55px;
+/*  gap: 55px;*/
 }
 
 .redidents-slider {
