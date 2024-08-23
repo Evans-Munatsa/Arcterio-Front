@@ -1,44 +1,101 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="initial-scale=1, width=device-width" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Design Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <link href="./lib/css/bootstrap.min.css" rel="stylesheet">
+  <!-- bootstrap css -->
+  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+  <link rel="stylesheet" href="./css/global.css" />
+  <link rel="stylesheet" href="./css/nav.css" />
+  <link rel="stylesheet" type="text/css" href="css/footer.css">
 
-    <link rel="stylesheet" href="./cssglobal.css" />
-    <link
-      rel="stylesheet"
-      href="./css/c-o-m-m-i-s-s-i-o-n-m-o-c-k-d-e-t-a-i-l-mac-book-pro-14-10.css"
-    />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400&display=swap"/>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+  <link href="./lib/animate/animate.min.css" rel="stylesheet" />
+  <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+    <style>
+        /* Add custom styles here */
+        body{
+          background: #f5f5f5;
+        }
+        .header-section {
+            background-image: url(./public/rectangle-683@2x.png);
+            min-height: 20em;
+            height: 35rem;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+        .content-section {
+            background-color: #f5f5f5; /* Light gray background for content sections */
+            padding: 50px 0;
+            overflow: hidden;
+        }
+        .image-content {
+            max-width: 100%;
+            height: auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
+        .image-content-1 {
+          position: relative;
+          left: 30%;
+        }
+        .text-section {
+            padding: 20px;
+        }
 
+        p {
+          color: black;
+          font-family: poppins;
+          font-size: 16px;
+          padding-top: 10px;
+        }
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- bootstrap css -->
-    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-    <link rel="stylesheet" href="./css/global.css" />
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/index2.css" />
-    <link rel="stylesheet" type="text/css" href="css/footer.css">
+        h1 {
+          font-size: 36px;
+          font-weight: lighter;
+          color: #001B72;
+          padding-bottom: 5rem;
+        }
 
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
-  </head>
-  <body>
+        .header-text-container {
+          position: relative;
+          padding-bottom: 5rem;
+        }
 
+        .tagline {
+          text-align: right;
+          background: #f5f5f5;
+        }
+
+        .tagline h4 {
+          font-size: 22px;
+          color: #001B72;
+        }
+
+        .image-content-first {
+          height: 60em;
+          padding-right: 30px;
+        }
+    </style>
+</head>
+<body>
     <!-- header section starts -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="width: 90%; margin: auto; background: #e5e5e5; border-radius: 25px; padding: 1rem 3rem; top: 2rem;">
-      <img src="img/icons/phone.svg"  class="bi bi-telephone">
-      <a class="navbar-logo" href="#" style="text-align:center;">
-        <img src="img/logos/arcterio.png"  class="logo1" id="logo" style="width: 10%;">
-        <img src="img/logos/arcterio-logo-icon.png" class="logo2" alt="Logo 2" style="width: 2rem;">
-      </a>
-      <button class="navbar-toggler" type="button">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="width: 90%; margin: auto; background: #e5e5e5; border-radius: 25px; padding: 1rem 3rem; top: 2rem; z-index: 2;">
+    <img src="img/icons/phone.svg"  class="bi bi-telephone">
+    <a class="navbar-logo" href="index.html" style="text-align:center;">
+      <img src="img/logos/arcterio.png"  class="logo1" id="logo" style="width: 10%;">
+      <img src="img/logos/arcterio-logo-icon.png" class="logo2" alt="Logo 2" style="width: 2rem;">
+    </a>
+    <button class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
 
-    <div id="sidebar" class="sidebar">
+  <div id="sidebar" class="sidebar">
+    <div class="container">
       <a href="javascript:void(0)" class="closebtn">&times;</a>
       <div class="left-float">
         <a href="/index.html">HOME</a>
@@ -46,257 +103,176 @@
 
       <div class="right-float" style="text-align: end;">
         <a href="about.html">Our Studio</a>
-        <a href="commissions.html">ARCHITECTURE COMMISSIONS</a>
+        <a href="commisions-main.html">ARCHITECTURE COMMISSIONS</a>
         <a href="blog.html">OUR BLOGS</a>
       </div>
 
       <div class="left-float">
         <a href="contact.html">TALK TO US</a>
-      </div>      
+      </div> 
     </div>
+     
+  </div>
 
-    <div class="overlay"></div>
-    <!-- header section ends -->
+  <div class="overlay"></div>
+  <!-- header section ends -->
+
+  <!-- header section -->
+  <section class="container-fluid header-section">
+
+    <!-- <img src="./public/rectangle-692@2x.png" alt="House Image 3" class="img-fluid cross-image"> -->
+    </section>
 
 
-
-
-    <div class="commission-mock-detail-macb">
-      <img
-        class="commission-mock-detail-macb-child"
-        alt=""
-        src="./public/rectangle-683@2x.png"
-      />
-
-      <div class="footer-container-container">
-        <img
-          class="footer-container5"
-          alt=""
-          src="./public/footer-container.svg"
-        />
-
-        <img
-          class="artboard-32-15"
-          alt=""
-          src="./public/artboard-32-11@2x.png"
-        />
-
-        <div class="instance-parent25" id="frameContainer">
-          <div class="primary-value-proposition-copy-wrapper28">
-            <div class="primary-value-proposition-container18">
-              <p class="our-brief-was">Let’s Turn Your Vision</p>
-              <p class="our-brief-was">Into A Lived Reality</p>
-            </div>
-          </div>
-          <div class="lorem-ipsum-dolor-sit-amet-co-wrapper4">
-            <div class="lorem-ipsum-dolor13">
-              Send us a message about your project so we can discuss your needs
-              and project scope
-            </div>
-          </div>
-          <div class="view-portfolio-button11">
-            <div class="button-text11">
-              <div class="view-our-work6">Book Consult</div>
-            </div>
-            <div class="arrow10">
-              <img class="arrow-child7" alt="" src="./public/arrow-1.svg" />
-            </div>
-          </div>
-        </div>
-        <div class="footer-links-details5">
-          <div class="footer-links5">
-            <div class="quick-menu-parent3">
-              <div class="quick-menu5">
-                <div class="quicklinks5">QUICKLINKS</div>
-              </div>
-              <div class="quick-menu-parent3">
-                <div class="quick-menu5">
-                  <div class="work5">Work</div>
-                </div>
-                <div class="quick-menu5">
-                  <div class="quicklinks5">Process</div>
-                </div>
-                <div class="quick-menu5">
-                  <div class="quicklinks5">Services</div>
-                </div>
-              </div>
-            </div>
-            <div class="contact-links-parent3">
-              <div class="quick-menu5">
-                <div class="quicklinks5">LET’S TALK</div>
-              </div>
-              <div class="quick-menu-parent3">
-                <div class="quick-menu5">
-                  <div class="quicklinks5">marieke@arcterio.co.za</div>
-                </div>
-                <div class="quick-menu5">
-                  <div class="quicklinks5">+27 87 802 9366</div>
-                </div>
-                <div class="quick-menu5">
-                  <div class="quicklinks5">Pretoria, South Africa</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="logo-mock5">
-            <div class="group11">
-              <img class="vector-icon20" alt="" src="./public/vector.svg" />
-
-              <div class="group12">
-                <img class="group-icon28" alt="" src="./public/group.svg" />
-
-                <img class="vector-icon21" alt="" src="./public/vector1.svg" />
-              </div>
-              <img class="group-icon29" alt="" src="./public/group1.svg" />
-            </div>
-          </div>
-        </div>
-        <div class="instance-parent26">
-          <div class="instance-parent27">
-            <div class="arcterio-2023-wrapper3">
-              <div class="arcterio-20235">arcterio _ 2023</div>
-            </div>
-            <div class="privacy-policy-wrapper3">
-              <div class="arcterio-20235">Privacy Policy</div>
-            </div>
-          </div>
-          <div class="frame-parent18">
-            <div class="follow-us-wrapper4">
-              <div class="follow-us6">Follow us</div>
-            </div>
-            <div class="social-links12">
-              <img class="group-icon30" alt="" src="./public/group2.svg" />
-            </div>
-            <div class="social-links12">
-              <img class="group-icon30" alt="" src="./public/group3.svg" />
-            </div>
-          </div>
-        </div>
+    <section class="container-fluid tagline">
+      <div class="container">
+        <h5>RESIDENTIAL</h5> 
+        <h4>Countryside Chic</h4>
+        <p>Average Area: 200sqm <br>
+        Year: 2004</p>
       </div>
-      <img
-        class="commission-mock-detail-macb-item"
-        alt=""
-        src="./public/rectangle-581@2x.png"
-      />
+    </section>
 
-      <img
-        class="commission-mock-detail-macb-inner"
-        alt=""
-        src="./public/rectangle-702@2x.png"
-      />
+    <!-- Section 1 -->
+    <section class="container-fluid content-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-section">
+                  <div class="header-text-container">
+                     <h1>Creating A Self-Sustaining Sanctuary</h1>
+                  </div>
+                    <p>
+                      Our brief was simple; design a house to accommodate the family’s specific needs and to retain a large open garden for children to play. Allowing the topography to dictate the house’s level, it became a multiple level house with each level, becoming a well-defined function of the house. 
+                    </p>
 
-      <img
-        class="commission-mock-detail-macb-child1"
-        alt=""
-        src="./public/rectangle-712@2x.png"
-      />
-
-      <img
-        class="commission-mock-detail-macb-child2"
-        alt=""
-        src="./public/rectangle-59@2x.png"
-      />
-
-      <img
-        class="commission-mock-detail-macb-child3"
-        alt=""
-        src="./public/rectangle-692@2x.png"
-      />
-
-      <div class="primary-value-proposition-copy-wrapper29">
-        <div class="primary-value-proposition-container18">
-          Crafting A Self-Sustaining Sanctuary
+                    <p>
+                      Although the house is connected to the grid, the design employs a rainwater harvesting system and supplements grid power with solar power; making this a self-sustaining sanctuary.
+                    </p>
+                </div>
+                <div class="col-md-6">
+                    <img src="./public/rectangle-59@2x.png" alt="House Image 1" class="img-fluid image-content image-content-1">
+                </div>
+            </div>
         </div>
-      </div>
-      <div class="primary-value-proposition-copy-wrapper30">
-        <div class="primary-value-proposition-container18">
-          Seamless Flow of Space & Light
+    </section>
+
+    <!-- Section 2 -->
+    <section class="container-fluid content-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="./public/rectangle-581@2x.png" alt="House Image 2" class="img-fluid image-content">
+                </div>
+                <div class="col-md-6 text-section">
+                  <p class="align-top">
+                    The exterior features a harmonious blend of natural stone and modern glass, creating a striking yet elegant facade. The expansive use of glass doors invite an abundance of natural light, blurring the lines between indoors and outdoors. 
+                  </p>
+                </div>
+            </div>
         </div>
+    </section>
+
+
+    <section class="container-fluid content-section">
+      <div class="container">
+        <h1>Seamless Flow of Space & Light</h1>
       </div>
-      <div class="offering-description-copy15">
-        <div class="lorem-ipsum-dolor14">
-          The exterior features a harmonious blend of natural stone and modern
-          glass, creating a striking yet elegant facade. The expansive use of
-          glass doors invite an abundance of natural light, blurring the lines
-          between indoors and outdoors.
-        </div>
-      </div>
-      <div class="offering-description-copy16">
-        <div class="lorem-ipsum-dolor14">
-          <p class="our-brief-was">
-            Our brief was simple; design a house to accommodate the family’s
-            specific needs and to retain a large open garden for children to
-            play. Allowing the topography to dictate the house’s level, it
-            became a multiple level house with each level, becoming a
-            well-defined function of the house.
-          </p>
-          <p class="our-brief-was">&nbsp;</p>
-          <p class="our-brief-was">
-            Although the house is connected to the grid, the design employs a
-            rainwater harvesting system and supplements grid power with solar
-            power; making this a self-sustaining sanctuary.
+      <img src="./public/rectangle-692@2x.png" alt="House Image 3" class="img-fluid cross-image">
+      <div class="container">
+        <div class="col-md-6 text-section">
+          <p>
+            The simplicity of the house reflects the casual country side living that inspired the design. The open-plan layout fosters a seamless flow between the kitchen, dining, and living area with its central fireplace, enhancing the sense of spaciousness.
           </p>
         </div>
       </div>
-      <div class="offering-description-copy17">
-        <div class="lorem-ipsum-dolor14">
-          The simplicity of the house reflects the casual country side living
-          that inspired the design. The open-plan layout fosters a seamless flow
-          between the kitchen, dining, and living area with its central
-          fireplace, enhancing the sense of spaciousness.
+    </section>
+
+    <!-- Section 3 -->
+    <section class="container-fluid content-section">
+        <div class="container">
+          <div class="row">
+                <div class="col-md-6">
+                    <img src="./public/rectangle-702@2x.png" alt="House Image 3" class="img-fluid image-content-first">
+                </div>
+                <div class="col-md-6">
+                  <img src="./public/rectangle-712@2x.png" alt="House Image 3" class="img-fluid image-content">
+                  <p>
+                    Attention Was Given To Detail To Provide A Canvas To Be<br> Coloured In As A Family’s Story Unfolds.
+                  </p>
+                </div>
+          </div>
+
+            </div>
         </div>
-      </div>
-      <div class="offering-description-copy18">
-        <div class="lorem-ipsum-dolor16">
-          Attention was given to detail to provide a canvas to be coloured in as
-          a family’s story unfolds.
+    </section>
+
+
+    <!-- Additional Sections as per design -->
+    <!-- Add more sections as needed, following the above pattern -->
+
+  <footer class="main-footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-6 vision">
+            <h1 class="footer-header">Let’s Turn Your Vision <br> Into A Lived Reality</h1>
+            <p class="footer-para">Send us a message about your project so we can <br> discuss your needs and project scope</p>
+            <a href="contact.html"><button class="footer-button">Book Consult <img src="img/icons/right-arrow.svg"></button></a>
         </div>
-      </div>
-      <div class="offering-description-copy19">
-        <div class="lorem-ipsum-dolor14">
-          <p class="residential">RESIDENTIAL</p>
-          <p class="our-brief-was">
-            <b class="countryside-chic1">Countryside Chic</b>
-          </p>
-          <p class="our-brief-was">
-            <span>
-              <span class="average-area-200sqm1">Average Area: 200sqm</span>
-            </span>
-          </p>
-          <p class="our-brief-was">
-            <span>
-              <span class="year-20041">Year: 2004</span>
-            </span>
-          </p>
+        <div class="col-6 links">
+          <div class="container">
+            <div class="row">
+              <div class="col-6">
+                <h3>QUICKLINKS</h3>
+               
+                <p>Work</p>
+                <p>Processes</p>
+                <p>Services </p>
+              </div>
+              <div class="col-6">
+                <h3>LET'S TALK</h3>
+
+                <p>marieke@arcterio.co.za</p>
+                <p>+27 87 802 9366</p>
+                <p>Pretoria, South Africa </p>
+              </div>
+              <img src="img/logos/arcterio.svg"  class="footer-logo" style="width: 50%;">
+            </div>
+          </div>
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-6" style="color: white; top: 50rem; position: relative;">
+          <p>arcterio _ 2023 | <a href="privacy.htnk" style="color: white; text-decoration: none;">Privacy Policy</a></p>
+        </div>
+        <div class="col-6" style="color: #001B72; top: 50rem; position: relative; text-align: end;">
+          <p style="color: #001B72">Follow us</p>
+          <img src="img/icons/Instagram.svg" style=" width: 25px; position: relative; bottom: 60px; left: 56px;">
+          <img src="img/icons/LinkedIn.svg" style=" width: 25px; position: relative; bottom: 60px; left: 56px;">
+
+        </div>
+        <!-- <div class="col-6">2</div> -->
+
+      </div>
     </div>
-
-    <script>
-      var frameContainer = document.getElementById("frameContainer");
-      if (frameContainer) {
-        frameContainer.addEventListener("click", function (e) {
-          window.location.href = "./t-a-l-k-t-o-u-s-desktop.html";
-        });
-      }
-      </script>
-
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-
-
-
-        <!-- JavaScript Libraries -->
+  </footer>
+      <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script> -->
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script> -->
   <script src="./lib/wow/wow.min.js"></script>
   <script src="./lib/easing/easing.min.js"></script>
   <script src="./lib/waypoints/waypoints.min.js"></script>
   <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+
+
 
   <!-- Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <link href="./lib/js/bootstrap.bundle.js" rel="stylesheet">
+
   <script src="js/nav.js"></script>
   <script src="js/main.js"></script>
-  </body>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+</body>
 </html>

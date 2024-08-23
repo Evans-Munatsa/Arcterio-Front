@@ -303,26 +303,26 @@
 }
 .commission-mock-detail-macb-item {
   position: absolute;
-  top: 1881px;
+  top: 1500px;
   left: 92px;
   border-radius: var(--br-mini);
-  width: 827px;
+  width: 600px;
   height: 583px;
   object-fit: cover;
 }
 .commission-mock-detail-macb-child1,
 .commission-mock-detail-macb-inner {
   position: absolute;
-  top: 4046px;
+  top: 3246px;
   left: 64px;
   border-radius: var(--br-mini);
-  width: 664px;
-  height: 817px;
+  width: 45%;
+/*  height: 817px;*/
   object-fit: cover;
 }
 .commission-mock-detail-macb-child1 {
-  left: 789px;
-  width: 658px;
+  left: 55%;
+  width: 40%;
   height: 535px;
   object-fit: contain;
 }
@@ -332,15 +332,15 @@
   top: 871px;
   left: 716px;
   border-radius: var(--br-mini);
-  width: 979px;
-  height: 810px;
+  width: 50%;
+/*  height: 810px;*/
   object-fit: cover;
 }
 .commission-mock-detail-macb-child3 {
-  top: 2721px;
-  left: -90px;
-  width: 1785px;
-  height: 885px;
+  top: 2321px;
+  left: 0px;
+  width: 100%;
+/*  height: 885px;*/
 }
 .primary-value-proposition-copy-wrapper29,
 .primary-value-proposition-copy-wrapper30 {
@@ -358,7 +358,7 @@
   color: var(--color-midnightblue);
 }
 .primary-value-proposition-copy-wrapper30 {
-  top: 2606px;
+  top: 2206px;
   left: 78px;
   width: 674px;
 }
@@ -369,8 +369,8 @@
 }
 .offering-description-copy15 {
   position: absolute;
-  top: 1881px;
-  left: 952px;
+  top: 1581px;
+  left: 800px;
   width: 423px;
   display: flex;
   flex-direction: row;
@@ -396,19 +396,19 @@
   box-sizing: border-box;
 }
 .offering-description-copy17 {
-  top: 3655px;
+  top: 3000px;
   left: 108px;
 }
 .lorem-ipsum-dolor16 {
   align-self: stretch;
   flex: 1;
   position: relative;
-  white-space: pre-wrap;
+/*  white-space: pre-wrap;*/
 }
 .offering-description-copy18 {
   position: absolute;
-  top: 4644px;
-  left: 793px;
+  top: 3720px;
+  left: 685px;
   width: 564px;
   display: flex;
   flex-direction: row;
@@ -433,18 +433,18 @@
   line-height: 20px;
 }
 .offering-description-copy19 {
-  position: absolute;
-  top: 630px;
-  left: 905px;
-  width: 564px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  padding: var(--padding-3xs);
-  box-sizing: border-box;
-  text-align: right;
-  font-size: var(--c1-size);
+    position: relative;
+    top: 630px;
+    /* left: 905px; */
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding: var(--padding-3xs);
+    /* box-sizing: border-box; */
+    text-align: right;
+    /* font-size: var(--c1-size); */
 }
 .vector-icon22 {
   align-self: stretch;
@@ -491,7 +491,7 @@
   width: 100%;
   position: relative;
   background-color: var(--color-whitesmoke);
-  height: 5978px;
+  height: 4100px;
   overflow: hidden;
   text-align: left;
   font-size: var(--font-size-lg);
