@@ -1,106 +1,351 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Figma Design Replication</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.10.5/font/bootstrap-icons.min.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="css/footer.css">
+            <link rel="stylesheet" href="./css/nav.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/styles.css"> -->
+    <style>
+        /* General Reset and Body Styling */
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4;
+            color: #1A3A5B;
+        }
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Arcterio | Home</title>
+        /* Top Navigation Styling */
+        .top-nav {
+            background-color: #e0e0e0;
+            padding: 0.5rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
 
-  <!-- font awesome css -->
-  <!-- <link rel="stylesheet" href="css/plugins/font-awesome.min.css"> -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-  <!-- bootstrap css -->
-  <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
-  <link rel="stylesheet" href="./css/global.css" />
-  <link rel="stylesheet" href="./css/nav.css" />
-  <link rel="stylesheet" href="./css/index2.css" />
-  <link rel="stylesheet" type="text/css" href="css/footer.css">
+        .top-nav .nav-logo {
+            font-size: 1.5rem;
+            color: #1A3A5B;
+            font-weight: bold;
+        }
 
-  <link rel="stylesheet" type="text/css" href="css/styles.css">
-  <link rel="stylesheet" type="text/css" href="css/test-contact.css">
-  <link href="./lib/animate/animate.min.css" rel="stylesheet" />
-  <link href="./lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet" />
+        .top-nav .nav-icon {
+            font-size: 1.5rem;
+            color: #1A3A5B;
+        }
 
+        /* Header Section */
+        .header-section {
+            padding: 4rem 2rem;
+            text-align: left;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            background-color: inherit;
+            position: relative;
+            overflow: hidden;
+        }
 
-  <body>
+        .header-content {
+    flex: 1;
+    min-width: 300px;
+    margin-right: 1rem;
+    margin-top: 10rem;
+    padding-left: 4em;
+}
 
-    <!-- header section starts -->
-    <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="width: 90%; margin: auto; background: #e5e5e5; border-radius: 25px; padding: 1rem 3rem; top: 2rem;">
-      <img src="img/icons/phone.svg"  class="bi bi-telephone">
-      <a class="navbar-logo" href="#" style="text-align:center;">
-        <img src="img/logos/arcterio.png"  class="logo1" id="logo" style="width: 10%;">
-        <img src="img/logos/arcterio-logo-icon.png" class="logo2" alt="Logo 2" style="width: 2rem;">
-      </a>
-      <button class="navbar-toggler" type="button">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
+        .header-content h1 {
+          font-size: 36px;
+          color: #001B72;
+          font-weight: lighter;
+          font-family: poppins;
+        }
 
-    <div id="sidebar" class="sidebar">
+        .header-content p {
+            color: #6c757d;
+            font-size: 1rem;
+            margin-top: 1rem;
+        }
+
+        .header-content .btn {
+            background-color: #001B72;
+            color: white;
+            margin-top: 1.5rem;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+        }
+
+        /* Header Image Styling */
+        .header-image {
+            flex: 1;
+/*            min-width: 300px;*/
+            width: 900px;
+            height: 500px;
+            border-radius: 300px;
+            object-fit: cover;
+        }
+
+.header-image-2 {
+    flex: 1;
+    /* min-width: 300px; */
+    width: 50%;
+    /* height: 500px; */
+    /* border-radius: 300px; */
+    object-fit: cover;
+    position: absolute;
+    left: 55%;
+}
+
+        /* Contact Form Section */
+        .contact-form-section {
+            padding: 4rem 2rem;
+            background-color: inherit;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+            overflow: hidden;
+            background-image: url(./img/backgrounds/plan.png);
+            background-blend-mode: overlay;
+        }
+
+        .contact-form {
+    flex: 1;
+    width: 500px;
+    padding-left: 4em;
+    /* margin-right: 1rem; */
+}
+
+        .contact-form h1 {
+    font-size: 36px;
+    color: #001B72;
+    font-weight: lighter;
+}
+
+        .contact-form p {
+            color: #6c757d;
+            font-size: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .form-control,
+        .form-select {
+            border-radius: 1.5rem;
+            margin-bottom: 1rem;
+            padding: 0.75rem;
+            background-color: #DADADA;
+        }
+
+        .btn-send {
+            background-color: #001B72;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 30px;
+            border: none;
+        }
+
+        /* Footer Section */
+        .footer-section {
+            background-color: #1A3A5B;
+            color: white;
+            padding: 4rem 2rem;
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer-content {
+            max-width: 50%;
+        }
+
+        .footer-content h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+        }
+
+        .footer-content p {
+            color: #d3d3d3;
+            font-size: 1rem;
+        }
+
+        .footer-logo {
+            position: absolute;
+            right: 2rem;
+            bottom: 2rem;
+            font-size: 2rem;
+            color: #ffffff;
+        }
+
+        /* Wave Divider */
+        .wave-divider {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 150px;
+            background: url('wave-divider.svg') no-repeat center bottom;
+            background-size: cover;
+        }
+
+        /* Social Icons */
+        .social-icons {
+            margin-top: 1rem;
+        }
+
+        .social-icons a {
+            color: #ffffff;
+            margin-right: 1rem;
+            font-size: 1.5rem;
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            .header-content h2,
+            .contact-form h2 {
+                font-size: 1.75rem;
+            }
+
+            .footer-content {
+                max-width: 100%;
+            }
+
+            .footer-logo {
+                position: relative;
+                margin-top: 2rem;
+            }
+
+            .top-nav {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .top-nav .nav-icon {
+                margin-top: 0.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+  <!-- header section starts -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" style="width: 90%; margin: auto; background: #e5e5e5; border-radius: 25px; padding: 1rem 3rem; top: 2rem; z-index: 2;">
+    <img src="img/icons/phone.svg"  class="bi bi-telephone">
+    <a class="navbar-logo" href="index.html" style="text-align:center;">
+      <img src="img/logos/arcterio.png"  class="logo1" id="logo" style="width: 10%;">
+      <img src="img/logos/arcterio-logo-icon.png" class="logo2" alt="Logo 2" style="width: 2rem;">
+    </a>
+    <button class="navbar-toggler" type="button">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </nav>
+
+  <div id="sidebar" class="sidebar">
+    <div class="container">
       <a href="javascript:void(0)" class="closebtn">&times;</a>
       <div class="left-float">
-        <a href="index.html">HOME</a>
+        <a href="/index.html">HOME</a>
       </div>
 
       <div class="right-float" style="text-align: end;">
         <a href="about.html">Our Studio</a>
-        <a href="#">ARCHITECTURE COMMISSIONS</a>
+        <a href="commissions.html">ARCHITECTURE COMMISSIONS</a>
         <a href="blog.html">OUR BLOGS</a>
       </div>
 
       <div class="left-float">
         <a href="contact.html">TALK TO US</a>
-      </div>      
+      </div> 
     </div>
+     
+  </div>
 
-    <div class="overlay"></div>
-    <!-- header section ends -->
+  <div class="overlay"></div>
+  <!-- header section ends -->
 
 
-
-
-    <div class="container-xxl main-sections">
-      <div class="row">
-        <div class="col-6">
-          <div class="instance-parent32">
-            <div class="primary-value-proposition-copy-wrapper33">
-              <div class="primary-value-proposition-container19">
-                Discover Our Meticulous Design Approach
-              </div>
-            </div>
-            <div class="offering-description-copy20">
-              <div class="primary-value-proposition-container20">
-                <p class="lets-turn-your-vision">
-                  Understand how we collaborate with you to translate
-                </p>
-                <p class="lets-turn-your-vision">
-                  your needs and aspirations into timeless spaces.
-                </p>
-              </div>
-            </div>
-            <div class="view-portfolio-button14">
-              <div class="button-text14">
-                <div class="download-pdf1">Download PDF</div>
-              </div>
-              <img class="arrow-icon2" alt="" src="./public/arrow1@2x.png" />
-            </div>
-          </div>
+  <!-- Header Section -->
+  <section class="header-section container-fluid">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="header-content">
+          <h1>Discover Our Meticulous <br> Design Approach</h1>
+          <p>Understand how we collaborate with you to translate your needs and aspirations into timeless spaces.</p>
+          <button class="btn">Download PDF</button>
         </div>
-        <div class="col-6"> <img class="talk-to-us-desktop-child"alt="" src="./public/rectangle-6321@2x.png" /></div>
+      </div>
+      <div class="col-md-6">
+        <img src="./img/Arcterio-architecture-project-process.jpg" alt="Design Approach" class="header-image">
       </div>
     </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="contact-form-section container-fluid">
+    <div class="row">
+      <div class="contact-form">
+        <h1>Let's Turn Your Vision <br>Into A Lived Reality</h1>
+        <p>Send us a message about your project so we can discuss your needs and project scope.</p>
+        <form>
+          <select class="form-select">
+            <option selected>Project Type</option>
+            <option value="1">New Residential</option>
+            <option value="2">Residential Renovations</option>
+            <option value="3">As-Built Drawings</option>
+            <option value="4">Commercial Renovation</option>
+          </select>
+          <div class="row">
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Name">
+            </div>
+            <div class="col">
+              <input type="text" class="form-control" placeholder="Surname">
+            </div>
+          </div>
+          <input type="email" class="form-control" placeholder="E-mail">
+          <textarea class="form-control" placeholder="Send us some details about your project"></textarea>
+          <button type="submit" class="btn-send">Send</button>
+        </form>
+      </div>
+      <img src="./public/a-frame-house-11@2x.png" alt="Project Image" class="header-image-2">
+    </div>
+  </section>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-        <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="./lib/wow/wow.min.js"></script>
-    <script src="./lib/easing/easing.min.js"></script>
-    <script src="./lib/waypoints/waypoints.min.js"></script>
-    <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
 
-    <!-- Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/nav.js"></script>
-    <script src="js/main.js"></script>
-    
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="./lib/wow/wow.min.js"></script>
+  <script src="./lib/easing/easing.min.js"></script>
+  <script src="./lib/waypoints/waypoints.min.js"></script>
+  <script src="./lib/owlcarousel/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+
+
+
+
+  <!-- Bootstrap Bundle with Popper -->
+  <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script> -->
+    <link href="./lib/js/bootstrap.bundle.js" rel="stylesheet">
+
+  <script src="js/nav.js"></script>
+  <script src="js/main.js"></script>
   </body>
+</html>
