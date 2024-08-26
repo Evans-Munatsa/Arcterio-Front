@@ -654,7 +654,7 @@ banner
       padding: 100px 0;
     }
 
-    .contact-form {
+/*    .contact-form {
       max-width: 400px;
     }
 
@@ -689,7 +689,7 @@ banner
         margin-left: 0;
       }
     }
-
+*/
 
 
 
@@ -1295,9 +1295,7 @@ CSS.g-6,
 
 
 
-div {
-  position: relative;
-}
+
 
 
 .slider {
